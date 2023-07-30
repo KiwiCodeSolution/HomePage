@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "photo": "/img/team/Artem.jpg",
+    "name": "Artem",
+    "position": "Lead designer and researcher",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "2",
+    "photo": "/img/team/Aleksandra.jpg",
+    "name": "Aleksandra",
+    "position": "Designer",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "3",
+    "photo": "/img/team/Sander.jpg",
+    "name": "Sander",
+    "position": "Teamlead",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "4",
+    "photo": "/img/team/Hardin.jpg",
+    "name": "Aleksandr",
+    "position": "Fullstack Developer",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "5",
+    "photo": "/img/team/Tolmachov_cleared.jpg",
+    "name": "Alexey",
+    "position": "DevOps and back-end",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "6",
+    "photo": "/img/team/Poduzova.jpg",
+    "name": "Evhenija",
+    "position": "Fullstack Developer",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "7",
+    "photo": "/img/no-image.png",
+    "name": "Name",
+    "position": "Position",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "8",
+    "photo": "/img/no-image.png",
+    "name": "Name",
+    "position": "Position",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "9",
+    "photo": "/img/no-image.png",
+    "name": "Name",
+    "position": "Position",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  },
+  {
+    "id": "10",
+    "photo": "/img/no-image.png",
+    "name": "Name",
+    "position": "Position",
+    "telegram": "#",
+    "instagram": "#",
+    "linkedIn": "#",
+    "github": "#"
+  }
+]
