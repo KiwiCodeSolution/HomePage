@@ -70,23 +70,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0px 20px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 0px 16px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
-}
-
 .title {
   width: fit-content;
   font-size: 32px;
@@ -147,4 +130,22 @@ ul {
     linear-gradient(180deg, rgb(56, 239, 125), rgba(17, 153, 142, 0)) border-box;
   border-radius: 50%;
   border: 10px solid transparent;
+}
+
+.gradient {
+  background: linear-gradient(0deg, rgb(5, 5, 5), rgba(5, 5, 5, 0));
+}
+
+.numbers {
+  background: -webkit-linear-gradient(0deg, rgba(56, 239, 125, 1), rgba(34, 125, 148, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.numbers__title {
+  background: linear-gradient(180deg, #38ef7d 0%, #227d94 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

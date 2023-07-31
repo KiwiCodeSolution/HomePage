@@ -23,6 +23,8 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/src/img/hero.png')",
+        aboutWave: "url('/src/img/about.png')",
+        aboutGirl: "url('/src/img/girl.png')",
       },
       boxShadow: {
         headerBtn: "0px 0px 16px 8px rgba(43,209,195,0.6)",
@@ -30,8 +32,25 @@ module.exports = {
         menuIcon: "0px 0px 10px 0px rgba(43,209,195,0.6)",
       },
       gridTemplateColumns: {},
-      keyframes: {},
-      animation: {},
+      keyframes: {
+        up: {
+          "0%": {
+            transform: "translateY(100%)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
+        right: {
+          "0%": {
+            transform: "translateX(-150%)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+      },
+      animation: { up: "up", right: "right 2s ease-in-out" },
     },
   },
   plugins: [],

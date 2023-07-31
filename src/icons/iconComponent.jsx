@@ -159,8 +159,8 @@ export const Design = ({ className }) => (
         y2="37.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_458_33"
@@ -170,8 +170,8 @@ export const Design = ({ className }) => (
         y2="31.9501"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_458_33"
@@ -181,8 +181,8 @@ export const Design = ({ className }) => (
         y2="22.75"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_458_33"
@@ -192,8 +192,8 @@ export const Design = ({ className }) => (
         y2="8.33333"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_458_33"
@@ -203,8 +203,8 @@ export const Design = ({ className }) => (
         y2="23.6167"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_458_33"
@@ -214,8 +214,8 @@ export const Design = ({ className }) => (
         y2="23.6167"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint6_linear_458_33"
@@ -225,8 +225,8 @@ export const Design = ({ className }) => (
         y2="18.6166"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint7_linear_458_33"
@@ -236,8 +236,8 @@ export const Design = ({ className }) => (
         y2="18.6166"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
     </defs>
   </svg>
@@ -248,24 +248,24 @@ export const Application = ({ className }) => (
       d="M15 36.6667H25C33.3334 36.6667 36.6667 33.3333 36.6667 25V15C36.6667 6.66666 33.3334 3.33333 25 3.33333H15C6.66671 3.33333 3.33337 6.66666 3.33337 15V25C3.33337 33.3333 6.66671 36.6667 15 36.6667Z"
       stroke="url(#paint0_linear_301_5391)"
       strokeWidth="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M16 14.95L11.85 19.1C11.3667 19.5833 11.3667 20.4 11.85 20.8833L16 25.0333"
       stroke="url(#paint1_linear_301_5391)"
       strokeWidth="1.5"
-      stroke-miterlimit="10"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M24 14.95L28.15 19.1C28.6333 19.5833 28.6333 20.4 28.15 20.8833L24 25.0333"
       stroke="url(#paint2_linear_301_5391)"
       strokeWidth="1.5"
-      stroke-miterlimit="10"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <defs>
       <linearGradient
@@ -276,8 +276,8 @@ export const Application = ({ className }) => (
         y2="36.6667"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_301_5391"
@@ -287,8 +287,8 @@ export const Application = ({ className }) => (
         y2="25.0333"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_301_5391"
@@ -298,8 +298,8 @@ export const Application = ({ className }) => (
         y2="25.0333"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
     </defs>
   </svg>
@@ -310,15 +310,15 @@ export const Marketing = ({ className }) => (
       d="M27.5 15.8333L20.5 22.8333L17.8333 18.8333L12.5 24.1667"
       stroke="url(#paint0_linear_458_47)"
       strokeWidth="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M24.1666 15.8333H27.5V19.1667"
       stroke="url(#paint1_linear_458_47)"
       strokeWidth="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M15 36.6667H25C33.3334 36.6667 36.6667 33.3333 36.6667 25V15C36.6667 6.66666 33.3334 3.33333 25 3.33333H15C6.66671 3.33333 3.33337 6.66666 3.33337 15V25C3.33337 33.3333 6.66671 36.6667 15 36.6667Z"
@@ -334,16 +334,16 @@ export const Marketing = ({ className }) => (
         y2="24.1667"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient id="paint1_linear_458_47" x1="25" y1="15" x2="25" y2="20" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
       <linearGradient id="paint2_linear_458_47" x1="20" y1="1" x2="20" y2="40" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#38EF7D" />
-        <stop offset="1" stop-color="#227D94" />
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
       </linearGradient>
     </defs>
   </svg>

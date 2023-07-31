@@ -13,11 +13,11 @@ const NAV_ELEMENTS = [
 
 const Menu = ({ type, styles }) => {
   return (
-    <nav className="flex relative gap-x-36">
+    <nav className="flex relative gap-x-14 md:gap-x-11 xl:gap-x-36 md:pr-[100px]">
       <ul
         className={`flex ${
           type === "header"
-            ? "items-center justify-center gap-x-10 w-[548px] ml-[154px] text-2xl font-medium"
+            ? "items-center justify-center gap-x-3 xl:gap-x-10 w-[480px] xl:w-[548px] text-2xl font-medium"
             : type === "footer"
             ? ""
             : "flex-col gap-y-5 text-2xl font-medium mx-auto text-center"
@@ -32,7 +32,7 @@ const Menu = ({ type, styles }) => {
         ))}
       </ul>
       {type !== "mobile" && (
-        <div className="flex gap-x-6 items-center">
+        <div className="flex gap-x-2 sm:gap-x-4 md:gap-x-5 xl:gap-x-6 items-center">
           <LanguageBtns />
           <Button btnStyle={"headerBtn"} btnType={"button"}>
             Contact us

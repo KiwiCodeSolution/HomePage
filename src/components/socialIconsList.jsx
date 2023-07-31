@@ -12,12 +12,16 @@ const SocialIconsList = ({ type }) => {
   return (
     <ul
       className={`flex h-full ${
-        type === "hero" ? "flex-col absolute bottom-0" : type === "footer" ? "flex-col" : "gap-x-4 mx-auto"
+        type === "hero"
+          ? "flex-col gap-y-5 fixed top-[50%] left-[5%] -translate-y-1/4 z-20 "
+          : type === "footer"
+          ? "flex-col"
+          : "gap-x-4 mx-auto"
       }`}
     >
       {SOC_ITEMS.map(({ id, Icon, link }) => (
-        <li key={id} className="rounded-full hover:shadow-socialIcon focus:shadow-socialIcon">
-          <a href={link} className="cursor-pointern">
+        <li key={id} className="rounded-full">
+          <a href={link} className="cursor-pointern rounded-full hover:shadow-socialIcon focus:shadow-socialIcon">
             <Icon />
           </a>
         </li>

@@ -19,7 +19,7 @@ const Button = ({ children, btnStyle, btnType, clickFn, btnClass }) => {
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  btnStyle: PropTypes.oneOf(["headerBtn", "formBtn"]).isRequired,
+  btnStyle: PropTypes.oneOf(["headerBtn", "formBtn", "startedBtn"]).isRequired,
   btnType: PropTypes.oneOf(["button", "submit"]),
   clickFn: PropTypes.func,
   btnClass: PropTypes.string,
