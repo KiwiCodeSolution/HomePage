@@ -163,7 +163,9 @@ ul {
 }
 
 .portfolio-pagination .swiper-pagination-bullet,
-.portfolio-pagination .swiper-pagination-bullet {
+.portfolio-pagination .swiper-pagination-bullet,
+.team-pagination .swiper-pagination-bullet,
+.team-pagination .swiper-pagination-bullet {
   border-radius: 50%;
   background: #939393;
   opacity: 0.2;
@@ -172,7 +174,9 @@ ul {
 }
 
 .portfolio-pagination .swiper-pagination-bullet-active,
-.portfolio-pagination .swiper-pagination-bullet-active {
+.portfolio-pagination .swiper-pagination-bullet-active,
+.team-pagination .swiper-pagination-bullet-active,
+.team-pagination .swiper-pagination-bullet-active {
   border-radius: 50%;
   background: #38ef7d;
   opacity: 1;
