@@ -13,7 +13,7 @@ const NAV_ELEMENTS = [
 
 const Menu = ({ type, styles }) => {
   return (
-    <nav className="flex relative gap-x-14 md:gap-x-11 xl:gap-x-36 md:pr-[100px]">
+    <nav className="flex relative gap-x-14 md:gap-x-11 xl:gap-x-36">
       <ul
         className={`flex ${
           type === "header"
@@ -39,7 +39,6 @@ const Menu = ({ type, styles }) => {
           </Button>
         </div>
       )}
-      {/* <SocialIconsList type="hero" /> */}
     </nav>
   );
 };

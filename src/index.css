@@ -149,3 +149,41 @@ ul {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.swiper {
+  z-index: 6;
+  margin: 0 auto;
+}
+
+.product.pagination {
+  width: 400px;
+  position: absolute;
+  bottom: -24px;
+  margin: 0 auto;
+}
+
+.portfolio-pagination .swiper-pagination-bullet,
+.portfolio-pagination .swiper-pagination-bullet {
+  border-radius: 50%;
+  background: #939393;
+  opacity: 0.2;
+  width: 6px;
+  height: 6px;
+}
+
+.portfolio-pagination .swiper-pagination-bullet-active,
+.portfolio-pagination .swiper-pagination-bullet-active {
+  border-radius: 50%;
+  background: #38ef7d;
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+}
+
+.button-next {
+  background: -webkit-linear-gradient(0deg, rgba(56, 239, 125, 1), rgba(34, 125, 148, 1));
+}
+
+.button-prev {
+  background: -webkit-linear-gradient(180deg, rgba(56, 239, 125, 1), rgba(34, 125, 148, 1));
+}

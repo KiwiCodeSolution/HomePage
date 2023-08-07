@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title from "../components/UI/title";
 
 const TEXTS = [
   {
@@ -29,33 +30,38 @@ const TEXTS = [
 
 const HowItWorks = () => {
   const [number, setNumber] = useState(1);
-  console.log(number);
 
   return (
-    <section className="bg-bg-main z-10">
-      <div className="container mx-auto px-10 relative h-full">
-        <h1 className="title mb-9">How it Works</h1>
-        <div className="flex gap-x-8 max-w-[430px] min-h-[356px] relative">
-          <ul className="flex flex-col justify-between">
-            {TEXTS.map(({ id }) => (
-              <li key={id}>
-                <button
-                  type="button"
-                  onClick={() => setNumber(id)}
-                  className={`text-5xl ${
-                    id !== number ? "opacity-[0.5]" : "opacity-[1]"
-                  } hover:opacity-[1] focus:opacity-[1] numbers `}
-                >
-                  {id}
-                </button>
-              </li>
-            ))}
-          </ul>
-          <ul>
-            <li className="text-[32px] font-medium mb-[10px] numbers__title">{TEXTS[number - 1].title}</li>
-            <li className="opacity-[0.8]">{TEXTS[number - 1].text}</li>
-          </ul>
-          <img src={TEXTS[number - 1].img} alt="how it works illustrations" className="absolute top-0 right-[-100px]" />
+    <section className="bg-bg-main pb-[169px] z-10">
+      <div className="container mx-auto px-10 md:px-20 xl:px-[120px] relative h-full xl:h-[470px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="flex flex-col relative order-2 md:order-1">
+            <Title>How it Works</Title>
+            <div className="flex gap-x-8 max-w-[430px] min-h-[356px] mb-[50px]">
+              <ul className="flex flex-col justify-between">
+                {TEXTS.map(({ id }) => (
+                  <li key={id}>
+                    <button
+                      type="button"
+                      onClick={() => setNumber(id)}
+                      onMouseEnter={() => setNumber(id)}
+                      className={`text-5xl ${
+                        id === number ? "opacity-[1]" : "opacity-[0.5]"
+                      } hover:opacity-[1] focus:opacity-[1] numbers`}
+                    >
+                      {id}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+              <ul>
+                <li className="text-[32px] font-medium mb-[10px] numbers__title">{TEXTS[number - 1].title}</li>
+                <li className="opacity-[0.8]">{TEXTS[number - 1].text}</li>
+              </ul>
+            </div>
+          </div>
+
+          <img src={TEXTS[number - 1].img} alt="how it works illustrations" className="h-full order-1 md:order-2" />
         </div>
       </div>
     </section>

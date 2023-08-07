@@ -3,8 +3,8 @@ import logo from "../img/logo.png";
 
 const NavDesktop = () => {
   return (
-    <div className="flex fixed top-3 container justify-between">
-      <img src={logo} alt="Logo" className="w-[172px] h-[88px] ml-8 xl:ml-10" />
+    <div className=" md:px-20 xl:px-[120px] flex fixed top-3 container justify-between">
+      <img src={logo} alt="Logo" className="w-[172px] h-[88px]" />
       <Menu type={"header"} />
     </div>
   );

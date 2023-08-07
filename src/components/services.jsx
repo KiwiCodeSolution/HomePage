@@ -27,9 +27,9 @@ const SERVICES = [
 
 const ServiсesList = () => {
   return (
-    <ul className="flex gap-x-[90px] justify-between mb-[76px]">
+    <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-x-[30px] xl:gap-x-[90px] justify-between mb-[76px] relative">
       {SERVICES.map(({ id, Icon, title, text, animation }) => (
-        <li key={id} className={`flex flex-col w-[354px] ${animation} `}>
+        <li key={id} className={`flex flex-col max-w-[354px] ${animation} `}>
           <Circle>
             <Icon className={"absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"} />
           </Circle>

@@ -354,3 +354,17 @@ export const Line = () => (
     <line opacity="0.1" y1="0.5" x2="133" y2="0.5" stroke="white" />
   </svg>
 );
+
+export const Left = () => (
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 4.99998C9 4.99998 5.95262 8.04737 3.99999 9.99999L9 15" stroke="white" strokeWidth="1.8" />
+    <path d="M4 10H16" stroke="white" strokeWidth="1.8" />
+  </svg>
+);
+
+export const Right = () => (
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11 4.99998C11 4.99998 14.0474 8.04737 16 9.99999L11 15" stroke="white" strokeWidth="1.8" />
+    <path d="M16 10H4" stroke="white" strokeWidth="1.8" />
+  </svg>
+);
