@@ -1,13 +1,13 @@
 const Input = ({ type, name, placeholder }) => {
   return (
     <>
-      <label htmlFor={name} className="flex flex-col">
+      <label htmlFor={name} className="flex flex-col text-base opacity-[.6]">
         {name}
         <input
           type={type}
           name={name}
           placeholder={placeholder}
-          className="w-[280px] h-11 rounded-[8px] border-[1px] border-bg-green border-opacity-[.4] placeholder-slate-200 bg-bg-grey"
+          className="w-[280px] h-11 py-2 px-4 rounded-[8px] border-[1px] border-bg-green border-opacity-[.4] bg-bg-grey placeholder:text-txt-white placeholder:opacity-[.2] focus:outline outline-bg-green"
         />
       </label>
     </>

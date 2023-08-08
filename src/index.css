@@ -63,7 +63,9 @@ svg {
   color: inherit;
 }
 
-ul {
+ul,
+li,
+ol {
   padding: 0px;
   margin: 0px;
 
@@ -165,7 +167,9 @@ ul {
 .portfolio-pagination .swiper-pagination-bullet,
 .portfolio-pagination .swiper-pagination-bullet,
 .team-pagination .swiper-pagination-bullet,
-.team-pagination .swiper-pagination-bullet {
+.team-pagination .swiper-pagination-bullet,
+.testimonials-pagination .swiper-pagination-bullet,
+.testimonials-pagination .swiper-pagination-bullet {
   border-radius: 50%;
   background: #939393;
   opacity: 0.2;
@@ -176,7 +180,9 @@ ul {
 .portfolio-pagination .swiper-pagination-bullet-active,
 .portfolio-pagination .swiper-pagination-bullet-active,
 .team-pagination .swiper-pagination-bullet-active,
-.team-pagination .swiper-pagination-bullet-active {
+.team-pagination .swiper-pagination-bullet-active,
+.testimonials-pagination .swiper-pagination-bullet-active,
+.testimonials-pagination .swiper-pagination-bullet-active {
   border-radius: 50%;
   background: #38ef7d;
   opacity: 1;

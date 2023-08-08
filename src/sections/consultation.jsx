@@ -17,13 +17,15 @@ const Consultation = () => {
         <Title>Consultation of the Area Expert</Title>
         <SubTitle subTitleClass={"w-[452px] uppercase mb-8"}>DURING CONSULTATION YOU WILL:</SubTitle>
 
-        <ul className="w-[866px] h-[234px] grid grid-cols-1 md:grid-cols-2 border-[0.5px] border-bg-green border-opacity-[.4]">
+        <ul className="w-[866px] h-[234px] grid grid-cols-1 md:grid-cols-2 border-[0.5px] border-bg-green border-opacity-[.4] mb-[108px]">
           {ITEMS.map((el) => (
-            <TableItem element={el} />
+            <TableItem element={el} key={el.id} />
           ))}
         </ul>
-
-        <ContactForm />
+        <div className="w-full relative">
+          <img src="/img/girl-1.png" alt="" className="absolute bottom-[102px] right-[-70px]" />
+          <ContactForm />
+        </div>
       </div>
     </section>
   );

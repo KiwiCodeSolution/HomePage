@@ -45,9 +45,6 @@ const Portfolio = () => {
             1200: {
               slidesPerView: 4,
             },
-            // 1400: {
-            //   slidesPerView: 5,
-            // },
           }}
         >
           {items.map((el) => (
@@ -56,7 +53,7 @@ const Portfolio = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <SwiperNavigations swipSection={"portfolio"} />
+        <SwiperNavigations swipSection={"portfolio"} swipClass={"w-1/4 mt-8 ml-auto"} />
       </div>
     </section>
   );

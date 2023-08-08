@@ -368,3 +368,112 @@ export const Right = () => (
     <path d="M16 10H4" stroke="white" strokeWidth="1.8" />
   </svg>
 );
+
+export const TestimonialsCircleS = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" className={className}>
+    <g filter="url(#filter0_f_308_3271)">
+      <circle cx="15" cy="15" r="5" fill="#38EF7D" />
+    </g>
+    <defs>
+      <filter
+        id="filter0_f_308_3271"
+        x="0"
+        y="0"
+        width="30"
+        height="30"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_308_3271" />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const TestimonialsCircleM = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" className={className}>
+    <g filter="url(#filter0_f_308_3269)">
+      <circle cx="48" cy="48" r="8" fill="#38EF7D" />
+    </g>
+    <defs>
+      <filter
+        id="filter0_f_308_3269"
+        x="0"
+        y="0"
+        width="96"
+        height="96"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_308_3269" />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const TestimonialsCircleL = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100"
+    height="100"
+    viewBox="0 0 100 100"
+    fill="none"
+    className={className}
+  >
+    <g filter="url(#filter0_f_308_3270)">
+      <circle cx="50" cy="50" r="10" fill="#38EF7D" />
+    </g>
+    <defs>
+      <filter
+        id="filter0_f_308_3270"
+        x="0"
+        y="0"
+        width="100"
+        height="100"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_308_3270" />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const Quotes = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none" className={className}>
+    <path
+      d="M3.66663 22.6416H14.2999C17.1049 22.6416 19.03 24.7683 19.03 27.3716V33.275C19.03 35.8784 17.1049 38.0049 14.2999 38.0049H8.39666C5.79332 38.0049 3.66663 35.8784 3.66663 33.275V22.6416"
+      stroke="#38EF7D"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M3.66663 22.6414C3.66663 11.5498 5.73835 9.71652 11.9717 6.01318"
+      stroke="#38EF7D"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M24.9883 22.6416H35.6216C38.4266 22.6416 40.3516 24.7683 40.3516 27.3716V33.275C40.3516 35.8784 38.4266 38.0049 35.6216 38.0049H29.7183C27.115 38.0049 24.9883 35.8784 24.9883 33.275V22.6416"
+      stroke="#38EF7D"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M24.9883 22.6414C24.9883 11.5498 27.0599 9.71652 33.2932 6.01318"
+      stroke="#38EF7D"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
