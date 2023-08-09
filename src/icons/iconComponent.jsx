@@ -242,6 +242,7 @@ export const Design = ({ className }) => (
     </defs>
   </svg>
 );
+
 export const Application = ({ className }) => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
     <path
@@ -304,6 +305,7 @@ export const Application = ({ className }) => (
     </defs>
   </svg>
 );
+
 export const Marketing = ({ className }) => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
     <path
@@ -475,5 +477,12 @@ export const Quotes = ({ className }) => (
       strokeLinecap="round"
       strokeLinejoin="round"
     />
+  </svg>
+);
+
+export const Up = ({ className }) => (
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    <path d="M4.99998 9C4.99998 9 8.04737 5.95262 9.99999 3.99999L15 9" stroke="white" strokeWidth="1.8" />
+    <path d="M10 4V16" stroke="white" strokeWidth="1.8" />
   </svg>
 );

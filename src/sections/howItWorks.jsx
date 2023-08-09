@@ -48,6 +48,7 @@ const HowItWorks = () => {
                       className={`text-5xl ${
                         id === number ? "opacity-[1]" : "opacity-[0.5]"
                       } hover:opacity-[1] focus:opacity-[1] numbers`}
+                      aria-label="number buttons"
                     >
                       {id}
                     </button>

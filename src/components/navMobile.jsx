@@ -18,6 +18,7 @@ const NavMobile = () => {
               type="button"
               onClick={() => setIsOpen(!isOpen)}
               className="absolute top-6 right-3 cursor-pointer hover:shadow-menuIcon focus:shadow-menuIcon rounded-full p-2"
+              aria-label="close button"
             >
               <icons.Close />
             </button>
@@ -34,6 +35,7 @@ const NavMobile = () => {
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}
                 className="cursor-pointer hover:shadow-menuIcon focus:shadow-menuIcon rounded-full p-2"
+                aria-label="menu button"
               >
                 <icons.Menu />
               </button>

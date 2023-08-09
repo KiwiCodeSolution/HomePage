@@ -33,7 +33,7 @@ const TestimonialsSwiper = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <SwiperNavigations swipSection={"testimonials"} swipClass={"mt-5 mx-auto"} />
+      <SwiperNavigations swipSection={"testimonials"} swipClass={"mt-5 w-[90%] mx-auto"} />
     </div>
   );
 };

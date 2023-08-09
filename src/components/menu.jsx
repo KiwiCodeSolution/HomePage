@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import Button from "./UI/buttons";
 import { textEffect } from "../helpers/stylesHelpers";
 import LanguageBtns from "./languageBtns";
-// import SocialIconsList from "./socialIconsList";
 
 const NAV_ELEMENTS = [
   { name: "Services", linkId: "#services" },
@@ -34,7 +33,7 @@ const Menu = ({ type, styles }) => {
       {type !== "mobile" && (
         <div className="flex gap-x-2 sm:gap-x-4 md:gap-x-5 xl:gap-x-6 items-center">
           <LanguageBtns />
-          <Button btnStyle={"headerBtn"} btnType={"button"}>
+          <Button btnStyle={"contactBtn"} btnType={"button"} aria={"Contact us"}>
             Contact us
           </Button>
         </div>

@@ -1,7 +1,7 @@
 const Input = ({ type, name, placeholder }) => {
   return (
     <>
-      <label htmlFor={name} className="flex flex-col text-base opacity-[.6]">
+      <label htmlFor={name} className="flex flex-col text-base text-white opacity-[.6]">
         {name}
         <input
           type={type}

@@ -12,8 +12,8 @@ const SocialIconsList = ({ type }) => {
   return (
     <ul
       className={`flex h-full ${
-        type === "hero"
-          ? "flex-col gap-y-5 fixed top-[50%] left-[5%] -translate-y-1/4 z-20 "
+        type === "allSite"
+          ? "flex-col gap-y-5 fixed top-1/2 left-[5%] -translate-y-1/4 z-20"
           : type === "footer"
           ? "flex-row gap-x-6 mx-auto"
           : "gap-x-4 mx-auto"
@@ -30,6 +30,6 @@ const SocialIconsList = ({ type }) => {
   );
 };
 SocialIconsList.propTypes = {
-  type: PropTypes.oneOf(["hero", "footer", "mobile"]).isRequired,
+  type: PropTypes.oneOf(["allSite", "footer", "mobile"]).isRequired,
 };
 export default SocialIconsList;

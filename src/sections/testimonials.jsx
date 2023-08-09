@@ -4,7 +4,7 @@ import TestimonialsSwiper from "../components/testimonialsSwiper";
 
 const Testimonials = () => {
   return (
-    <section className="bg-bg-main pb-[134px] z-10">
+    <section className="bg-bg-main bg-testimonials pb-[134px] z-10">
       <div className="container mx-auto px-10 md:px-20 xl:px-[120px] pt-8 min-h-[934px] relative">
         <Title titleClass={"w-full mx-auto"}>Testimonials</Title>
 

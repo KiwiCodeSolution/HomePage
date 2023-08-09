@@ -1,4 +1,5 @@
 import ServiсesList from "../components/services";
+
 import Title from "../components/UI/title";
 
 const About = () => {

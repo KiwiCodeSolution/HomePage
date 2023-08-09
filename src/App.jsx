@@ -1,3 +1,4 @@
+import SocialIconsList from "./components/socialIconsList";
 import About from "./sections/about";
 import Consultation from "./sections/consultation";
 import Footer from "./sections/footer";
@@ -10,7 +11,8 @@ import Testimonials from "./sections/testimonials";
 
 function App() {
   return (
-    <div className="bg-bg-main text-txt-white font-main_en flex flex-col min-h-[100vh]">
+    <div className="bg-bg-main text-txt-white font-main_en flex flex-col min-h-[100vh] relative">
+      <SocialIconsList type="allSite" />
       <Header />
       <Hero />
       <About />
