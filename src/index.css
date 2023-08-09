@@ -138,6 +138,10 @@ ol {
   background: linear-gradient(0deg, rgb(5, 5, 5), rgba(5, 5, 5, 0));
 }
 
+.gradient__footer {
+  background: linear-gradient(180deg, rgb(5, 5, 5), rgba(5, 5, 5, 0));
+}
+
 .numbers {
   background: -webkit-linear-gradient(0deg, rgba(56, 239, 125, 1), rgba(34, 125, 148, 1));
   background-clip: text;

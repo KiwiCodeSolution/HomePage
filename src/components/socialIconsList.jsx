@@ -15,7 +15,7 @@ const SocialIconsList = ({ type }) => {
         type === "hero"
           ? "flex-col gap-y-5 fixed top-[50%] left-[5%] -translate-y-1/4 z-20 "
           : type === "footer"
-          ? "flex-col"
+          ? "flex-row gap-x-6 mx-auto"
           : "gap-x-4 mx-auto"
       }`}
     >

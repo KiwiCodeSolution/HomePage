@@ -6,7 +6,7 @@ const About = () => {
     <section className="bg-bg-main bg-aboutWave bg-no-repeat bg-[center_top_-8rem] z-10">
       <div className="container mx-auto px-10 md:px-20 xl:px-[120px] relative h-full ">
         <div className="w-full h-20 -top-[75px] left-0 absolute gradient" />
-        <ServiсesList />
+        <ServiсesList type={"about"} />
         <div className="bg-aboutGirl bg-no-repeat bg-right-top h-[640px]">
           <Title>About company</Title>
           <ul className="flex flex-col gap-y-6 w-[514px] text-xl text-txt-grey mt-8">

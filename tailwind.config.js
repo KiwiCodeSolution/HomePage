@@ -25,12 +25,14 @@ module.exports = {
         hero: "url('/src/img/hero.png')",
         aboutWave: "url('/src/img/about.png')",
         aboutGirl: "url('/src/img/girl.png')",
+        footer: "url('/src/img/footer.png')",
       },
       boxShadow: {
         headerBtn: "0px 0px 16px 8px rgba(43,209,195,0.6)",
         socialIcon: "0px 0px 10px 0px rgba(43,209,195,0.6)",
         menuIcon: "0px 0px 10px 0px rgba(43,209,195,0.6)",
         swiper: "0px 0px 20px 10px rgba(43,209,195,0.6)",
+        testimonials: "0px 0px 15px 0px rgba(143,151,150)",
       },
       gridTemplateColumns: {},
       keyframes: {

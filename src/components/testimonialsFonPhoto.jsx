@@ -1,4 +1,4 @@
-import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+import { MouseParallax } from "react-just-parallax";
 import items from "../data/testimonials.json";
 
 const styles = [
@@ -24,17 +24,19 @@ const styles = [
 
 const TestimonialsFonPhoto = () => {
   return (
-    <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
-      {/* <ul> */}
+    <ul>
       {items.map((el) => (
         <li key={el.id} className={`${styles[el.id]} absolute`}>
-          <MouseParallaxChild factorX={0.3} factorY={0.5}>
-            <img src={el.photo} alt="testimonials" className={`${styles[el.id]} rounded-full object-cover`} />
-          </MouseParallaxChild>
+          <MouseParallax>
+            <img
+              src={el.photo}
+              alt="testimonials"
+              className={`${styles[el.id]} rounded-full object-cover shadow-testimonials`}
+            />
+          </MouseParallax>
         </li>
       ))}
-      {/* </ul> */}
-    </MouseParallaxContainer>
+    </ul>
   );
 };
 

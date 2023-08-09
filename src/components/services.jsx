@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import * as icons from "../icons/iconComponent";
 import Circle from "./UI/circle";
 
@@ -25,8 +27,8 @@ const SERVICES = [
   },
 ];
 
-const ServiсesList = () => {
-  return (
+const ServiсesList = ({ type }) => {
+  return type === "about" ? (
     <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-x-[30px] xl:gap-x-[90px] justify-between mb-[76px] relative">
       {SERVICES.map(({ id, Icon, title, text, animation }) => (
         <li key={id} className={`flex flex-col max-w-[354px] ${animation} `}>
@@ -39,7 +41,19 @@ const ServiсesList = () => {
         </li>
       ))}
     </ul>
+  ) : (
+    <ul className="flex flex-col gap-y-4 max-w-[245px]">
+      {SERVICES.map(({ id, title }) => (
+        <li key={id} className="text-2xl font-medium">
+          {title}
+        </li>
+      ))}
+    </ul>
   );
+};
+
+ServiсesList.propTypes = {
+  type: PropTypes.string,
 };
 
 export default ServiсesList;
