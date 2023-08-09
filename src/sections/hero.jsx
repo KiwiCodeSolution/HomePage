@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import CountUp from "react-countup";
 import { useState } from "react";
 import Button from "../components/UI/buttons";
@@ -20,14 +21,14 @@ const Hero = () => {
     setIsOpnen(false);
   }
   return (
-    <section className="container mx-auto pt-[90px] min-h-[80vh] fullscreen">
-      <div className="fixed container mx-auto px-10 md:px-20 xl:px-[120px] top-20 fullscreen__body">
-        <div className="h-[828px] bg-hero bg-no-repeat bg-right-top bg-contain mx-auto pt-20">
-          <h1 className="w-[704px] text-[64px] font-bold leading-[1.4] mb-6">
+    <section className="container mx-auto pt-[90px] min-h-[85vh] fullscreen">
+      <div className="fixed container mx-auto px-5 md:px-20 xl:px-[120px] top-20 fullscreen__body ">
+        <div className="h-[480px] xl:h-[828px] bg-no-repeat bg-right-top bg-contain mx-auto pt-14 hero">
+          <h1 className="w-[311px] xl:w-[704px] text-[34px] xl:text-[64px] font-bold leading-[1.4] mb-14 xl:mb-4">
             Full cycle <span className="accent">development</span> and
             <span className="accent"> support</span> of your sites
           </h1>
-          <p className="text-2xl leading-[1.6] w-[452px] mb-4">
+          <p className="text-base xl:text-2xl leading-[1.6] w-[301px] xl:w-[452px] mb-3 z-10">
             More than <CountUp end={5} />+ ears of experience that helps build effective process.
           </p>
           <IndicatorsList />

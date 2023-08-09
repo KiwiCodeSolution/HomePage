@@ -24,7 +24,7 @@ const Menu = ({ type, styles }) => {
       >
         {NAV_ELEMENTS.map((el) => (
           <li key={el.name}>
-            <a href={el.linkId} className={`cursor-pointer ${textEffect}`}>
+            <a href={el.linkId} className={`cursor-pointer ${textEffect} text-white`}>
               {el.name}
             </a>
           </li>

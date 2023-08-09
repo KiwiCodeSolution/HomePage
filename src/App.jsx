@@ -1,4 +1,5 @@
 import SocialIconsList from "./components/socialIconsList";
+import useMatchMedia from "./hooks/useMediaQuery";
 import About from "./sections/about";
 import Consultation from "./sections/consultation";
 import Footer from "./sections/footer";
@@ -10,18 +11,20 @@ import Team from "./sections/team";
 import Testimonials from "./sections/testimonials";
 
 function App() {
+  const { isMobile } = useMatchMedia();
   return (
     <div className="bg-bg-main text-txt-white font-main_en flex flex-col min-h-[100vh] relative">
-      <SocialIconsList type="allSite" />
+      {!isMobile && <SocialIconsList type="allSite" />}
+
       <Header />
       <Hero />
-      <About />
-      <HowItWorks />
-      <Portfolio />
-      <Team />
-      <Consultation />
-      <Testimonials />
-      <Footer />
+      {/* <About /> */}
+      {/* <HowItWorks /> */}
+      {/* <Portfolio /> */}
+      {/* <Team /> */}
+      {/* <Consultation /> */}
+      {/* <Testimonials /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

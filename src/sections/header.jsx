@@ -1,5 +1,6 @@
 import NavDesktop from "../components/navDesktop";
 import NavMobile from "../components/navMobile";
+
 import useMatchMedia from "../hooks/useMediaQuery";
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
   return (
     <>
       <div className="container mx-auto">
-        <header className="w-full z-10">{isMobile ? <NavMobile /> : <NavDesktop />}</header>
+        <header className="w-full z-30">{isMobile ? <NavMobile /> : <NavDesktop />}</header>
       </div>
     </>
   );
