@@ -10,7 +10,7 @@ const NAV_ELEMENTS = [
   { name: "Contacts", linkId: "#contacts" },
 ];
 
-const Menu = ({ type, styles }) => {
+const Menu = ({ type, styles, clickFn }) => {
   return (
     <nav className="flex relative gap-x-14 md:gap-x-11 xl:gap-x-36">
       <ul
@@ -24,7 +24,7 @@ const Menu = ({ type, styles }) => {
       >
         {NAV_ELEMENTS.map((el) => (
           <li key={el.name}>
-            <a href={el.linkId} className={`cursor-pointer ${textEffect} text-white`}>
+            <a href={el.linkId} className={`cursor-pointer ${textEffect} text-white`} onClick={clickFn}>
               {el.name}
             </a>
           </li>
@@ -45,6 +45,7 @@ const Menu = ({ type, styles }) => {
 Menu.propTypes = {
   type: PropTypes.oneOf(["header", "footer", "mobile"]).isRequired,
   styles: PropTypes.string,
+  clickFn: PropTypes.func,
 };
 
 export default Menu;

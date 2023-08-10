@@ -8,7 +8,7 @@ const INDICATORS = [
 
 const IndicatorsList = () => {
   return (
-    <ul className="flex gap-x-4 mb-9 xl:mb-7">
+    <ul className="w-[320px] md:w-full flex gap-x-4 mb-9 xl:mb-7">
       {INDICATORS.map(({ value, category }) => (
         <li key={value} className="flex flex-col gap-y-2 text-center font-bold">
           <p className="text-[40px] accent">

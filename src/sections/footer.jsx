@@ -11,13 +11,16 @@ const Footer = () => {
   return (
     <section className="bg-bg-main bg-footer bg-no-repeat bg-cover z-10 relative">
       <div className="w-full h-20 -top-[15px] left-0 absolute gradient__footer" />
-      <div className="container h-[440px] px-10 md:px-20 xl:px-[120px] pt-32 pb-[134p] mx-auto relative">
-        <ul className="flex justify-between">
+      <div
+        className="container min-h-[440px] px-5 md:px-10 xl:px-[120px] pt-32 pb-[84px] md:pb-[134px] mx-auto relative"
+        id="contacts"
+      >
+        <ul className="flex flex-col gap-y-6 md:flex-row md:gap-y-0 justify-between">
           <li className="flex flex-col gap-y-10 mr-[134px]">
             <Logo />
             <SocialIconsList type={"footer"} />
           </li>
-          <li className="mr-[91px]">
+          <li className="md:mr-[91px]">
             <ServiсesList />
           </li>
           <li>
@@ -26,7 +29,7 @@ const Footer = () => {
         </ul>
         <Button
           btnStyle="roundBtn"
-          btnClass={"absolute top-[128px] right-0"}
+          btnClass={"absolute top-[150px] xl:top-[128px] right-2 md:right-0"}
           clickFn={scrollToTop}
           aria={"go up button"}
         >

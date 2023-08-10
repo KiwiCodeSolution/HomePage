@@ -14,6 +14,7 @@ body {
 @media screen and (min-width: 320px) {
   .hero {
     background-image: linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.75)), url(/public/img/hero.png);
+    background-size: 320px;
   }
 
   .about {
@@ -24,9 +25,24 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(/public/img/hero.png);
+    background-size: 380px;
+    background-position: 95% 75%;
   }
   .about {
     background-image: url(/public/img/girl.png);
+    background-size: 480px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url(/public/img/hero.png);
+    background-size: 680px;
+  }
+
+  .about {
+    background-image: url(/public/img/girl.png);
+    background-size: 500px;
   }
 }
 

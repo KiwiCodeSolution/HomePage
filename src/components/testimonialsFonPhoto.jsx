@@ -24,7 +24,7 @@ const styles = [
 
 const TestimonialsFonPhoto = () => {
   return (
-    <ul>
+    <ul className="hidden md:inline">
       {items.map((el) => (
         <li key={el.id} className={`${styles[el.id]} absolute`}>
           <MouseParallax>

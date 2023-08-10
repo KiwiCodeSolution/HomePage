@@ -14,15 +14,15 @@ function App() {
   return (
     <div className="bg-bg-main text-txt-white font-main_en flex flex-col min-h-[100vh] relative">
       {/* <SocialIconsList type="allSite" /> */}
-      {/* <Header /> */}
-      {/* <Hero /> */}
-      {/* <About /> */}
-      {/* <HowItWorks /> */}
+      <Header />
+      <Hero />
+      <About />
+      <HowItWorks />
       <Portfolio />
       <Team />
-      {/* <Consultation /> */}
-      {/* <Testimonials /> */}
-      {/* <Footer /> */}
+      <Consultation />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

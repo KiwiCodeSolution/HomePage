@@ -4,27 +4,35 @@ import * as icons from "../icons/iconComponent";
 import { useState } from "react";
 import LanguageBtns from "./languageBtns";
 import SocialIconsList from "./socialIconsList";
-import Overlay from "./overlay";
+import Overlay from "./UI/modal/overlay";
+import useScrollBlock from "../hooks/useScrollBlock";
+import Button from "./UI/buttons";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+
+  const [blockScroll, allowScroll] = useScrollBlock();
+
+  function openModal() {
+    blockScroll();
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    allowScroll();
+    setIsOpen(false);
+  }
 
   return (
     <div className="container mx-auto">
-      <div className="w-[320px] h-full relative">
+      <div className="w-full h-full fixed top-1">
         {isOpen ? (
           <Overlay>
             <div className="bg-bg-main flex flex-col justify-between h-full pt-[120px] px-[70px] pb-10">
-              <button
-                type="button"
-                onClick={() => setIsOpen(!isOpen)}
-                className="absolute top-6 right-3 cursor-pointer hover:shadow-menuIcon focus:shadow-menuIcon rounded-full p-2"
-                aria-label="close button"
-              >
+              <Button type="button" btnStyle="closeBtn" clickFn={closeModal} aria={"close button"}>
                 <icons.Close />
-              </button>
-              <Menu type={"mobile"} />
+              </Button>
+              <Menu type={"mobile"} clickFn={closeModal} />
               <img src={logo} alt="Logo" className="w-[172px] h-[88px] mt-[150px] mx-auto mb-10" />
               <SocialIconsList type="mobile" />
             </div>
@@ -36,7 +44,7 @@ const NavMobile = () => {
               <LanguageBtns />
               <button
                 type="button"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={openModal}
                 className="cursor-pointer hover:shadow-menuIcon focus:shadow-menuIcon rounded-full p-2"
                 aria-label="menu button"
               >

@@ -13,7 +13,7 @@ import SwiperNavigations from "../components/swiperNavigations";
 const Portfolio = () => {
   return (
     <section className="bg-bg-main z-10">
-      <div className="container mx-auto px-5 md:px-20 xl:px-[120px] pt-8 pb-4 relative">
+      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pt-8 pb-4 relative" id="portfolio">
         <Title>Portfolio</Title>
         <SubTitle subTitleClass={"max-w-[452px] mb-6 xl:mb-10"}>
           We present examples of work that has already been implemented by our team.
