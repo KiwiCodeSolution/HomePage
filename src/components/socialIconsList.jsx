@@ -11,12 +11,12 @@ const SOC_ITEMS = [
 const SocialIconsList = ({ type }) => {
   return (
     <ul
-      className={`flex h-full ${
+      className={`h-full ${
         type === "allSite"
-          ? "flex-col gap-y-5 fixed top-1/2 left-[5%] -translate-y-1/4 z-20"
+          ? "hidden xl:flex flex-col gap-y-5 fixed top-1/2 left-[5%] -translate-y-1/4 z-20"
           : type === "footer"
-          ? "flex-row gap-x-6 mx-auto"
-          : "gap-x-4 mx-auto"
+          ? "flex flex-row gap-x-6 mx-auto"
+          : "flex gap-x-4 mx-auto"
       }`}
     >
       {SOC_ITEMS.map(({ id, Icon, link }) => (

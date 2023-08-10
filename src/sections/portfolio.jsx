@@ -13,9 +13,9 @@ import SwiperNavigations from "../components/swiperNavigations";
 const Portfolio = () => {
   return (
     <section className="bg-bg-main z-10">
-      <div className="container mx-auto px-10 md:px-20 xl:px-[120px] pt-8 pb-4 relative">
+      <div className="container mx-auto px-5 md:px-20 xl:px-[120px] pt-8 pb-4 relative">
         <Title>Portfolio</Title>
-        <SubTitle subTitleClass={"w-[452px] mb-10 "}>
+        <SubTitle subTitleClass={"max-w-[452px] mb-6 xl:mb-10"}>
           We present examples of work that has already been implemented by our team.
         </SubTitle>
 
@@ -53,7 +53,7 @@ const Portfolio = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <SwiperNavigations swipSection={"portfolio"} swipClass={"w-1/4 mt-8 ml-auto"} />
+        <SwiperNavigations swipSection={"portfolio"} swipClass={"w-full md:w-1/4 mt-8 mx-auto md:ml-auto"} />
       </div>
     </section>
   );

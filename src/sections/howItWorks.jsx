@@ -37,7 +37,7 @@ const HowItWorks = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="flex flex-col relative order-2 md:order-1">
             <Title>How it Works</Title>
-            <div className="flex gap-x-8 max-w-[430px] min-h-[356px] mb-[50px]">
+            <div className="flex gap-x-4 xl:gap-x-8 max-w-[430px] min-h-[356px] mt-2 mb-[50px]">
               <ul className="flex flex-col justify-between">
                 {TEXTS.map(({ id }) => (
                   <li key={id}>
@@ -45,7 +45,7 @@ const HowItWorks = () => {
                       type="button"
                       onClick={() => setNumber(id)}
                       onMouseEnter={() => setNumber(id)}
-                      className={`text-5xl ${
+                      className={`text-[32px] xl:text-5xl ${
                         id === number ? "opacity-[1]" : "opacity-[0.5]"
                       } hover:opacity-[1] focus:opacity-[1] numbers`}
                       aria-label="number buttons"
@@ -55,14 +55,17 @@ const HowItWorks = () => {
                   </li>
                 ))}
               </ul>
-              <ul>
-                <li className="text-[32px] font-medium mb-[10px] numbers__title">{TEXTS[number - 1].title}</li>
+              <ul className="pt-2">
+                <li className="text-2xl xl:text-[32px] font-medium mb-[10px] numbers__title">
+                  {TEXTS[number - 1].title}
+                </li>
                 <li className="opacity-[0.8]">{TEXTS[number - 1].text}</li>
               </ul>
             </div>
           </div>
-
-          <img src={TEXTS[number - 1].img} alt="how it works illustrations" className="h-full order-1 md:order-2" />
+          <div className="h-[260px] order-1 md:order-2">
+            <img src={TEXTS[number - 1].img} alt="how it works illustrations" className="h-full " />
+          </div>
         </div>
       </div>
     </section>

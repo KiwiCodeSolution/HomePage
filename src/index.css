@@ -15,11 +15,18 @@ body {
   .hero {
     background-image: linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.75)), url(/public/img/hero.png);
   }
+
+  .about {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.75)), url(/public/img/girl.png);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(/public/img/hero.png);
+  }
+  .about {
+    background-image: url(/public/img/girl.png);
   }
 }
 

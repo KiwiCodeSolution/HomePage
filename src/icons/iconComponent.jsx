@@ -113,7 +113,14 @@ export const LinkId = () => (
 );
 
 export const Design = ({ className }) => (
-  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+  <svg
+    // width="40"
+    // height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`${className} w-[30px] h-[30px] xl:w-[40px] xl:h-[40px]`}
+  >
     <path
       d="M17.9169 37.5H22.1169C23.7169 37.5 24.7502 36.3667 24.4502 34.9833L23.7669 31.9668H16.2669L15.5835 34.9833C15.2835 36.2833 16.4169 37.5 17.9169 37.5Z"
       stroke="url(#paint0_linear_458_33)"
@@ -244,7 +251,14 @@ export const Design = ({ className }) => (
 );
 
 export const Application = ({ className }) => (
-  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+  <svg
+    // width="40"
+    // height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`${className} w-[30px] h-[30px] xl:w-[40px] xl:h-[40px]`}
+  >
     <path
       d="M15 36.6667H25C33.3334 36.6667 36.6667 33.3333 36.6667 25V15C36.6667 6.66666 33.3334 3.33333 25 3.33333H15C6.66671 3.33333 3.33337 6.66666 3.33337 15V25C3.33337 33.3333 6.66671 36.6667 15 36.6667Z"
       stroke="url(#paint0_linear_301_5391)"
@@ -307,7 +321,14 @@ export const Application = ({ className }) => (
 );
 
 export const Marketing = ({ className }) => (
-  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+  <svg
+    // width="40"
+    // height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`${className} w-[30px] h-[30px] xl:w-[40px] xl:h-[40px]`}
+  >
     <path
       d="M27.5 15.8333L20.5 22.8333L17.8333 18.8333L12.5 24.1667"
       stroke="url(#paint0_linear_458_47)"

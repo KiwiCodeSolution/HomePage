@@ -29,7 +29,7 @@ const SERVICES = [
 
 const ServiсesList = ({ type }) => {
   return type === "about" ? (
-    <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-x-[30px] xl:gap-x-[90px] justify-between mb-[76px] relative">
+    <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-10 xl:gap-y-0 xl:grid-cols-3 md:gap-x-[30px] xl:gap-x-[90px] justify-between mb-[60px] xl:mb-[76px] relative">
       {SERVICES.map(({ id, Icon, title, text, animation }) => (
         <li key={id} className={`flex flex-col max-w-[354px] ${animation} `}>
           <Circle>

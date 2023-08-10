@@ -12,9 +12,9 @@ import TeamCard from "../components/teamCard";
 const Team = () => {
   return (
     <section className="bg-bg-main z-10">
-      <div className="container mx-auto px-10 md:px-20 xl:px-[120px] pt-8 pb-[97px] relative">
+      <div className="container mx-auto px-5 md:px-20 xl:px-[120px] pt-8 pb-[97px] relative">
         <Title>Our Team</Title>
-        <SubTitle subTitleClass={"w-[520px] mb-10 "}>
+        <SubTitle subTitleClass={"max-w-[520px] mb-6 xl:mb-10"}>
           Our team offers a full range of layout development services to testing the finished proposal.
         </SubTitle>
 
@@ -55,7 +55,7 @@ const Team = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <SwiperNavigations swipSection={"team"} swipClass={"w-1/4 mt-8 ml-auto"} />
+        <SwiperNavigations swipSection={"team"} swipClass={"w-full md:w-1/4 mt-8 mx-auto md:ml-auto"} />
       </div>
     </section>
   );
