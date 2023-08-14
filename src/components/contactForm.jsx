@@ -6,9 +6,15 @@ import Button from "./UI/buttons";
 import Input from "./UI/input";
 
 const ContactForm = ({ section, formFn }) => {
+  const handleClick = () => (formFn ? formFn() : null);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [error, setError] = useState(false);
+
+  const { React_App_TOKEN: TOKEN, React_App_CHAT_ID: CHAT_ID } = env;
+
+  const API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const formStyle =
     section === "modal"
@@ -20,35 +26,51 @@ const ContactForm = ({ section, formFn }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (section === "modal" && (name === "" || email === "")) {
-      alert("OOOPS!");
+      setError(true);
+      return;
     }
-    if (section === "consultation" && (name === "" || phone === "")) {
-      alert("OOOPS! ---- 2 ");
+    if (section === "consultation" && (phone === "" || email === "")) {
+      setError(true);
+      return;
     }
-    resetForm();
-    formFn();
+
+    const message =
+      section === "modal"
+        ? `<b>New contact from Landing!</b> %0A<b>Phone:</b> ${name} %0A<b>Email:</b> ${email}`
+        : `<b>New contact from Landing!</b> %0A<b>Phone:</b> ${phone} %0A<b>Email:</b> ${email}`;
+
+    fetch(`${API}?chat_id=${CHAT_ID}&text=${message}&parse_mode=html`)
+      .then((res) => {
+        resetForm();
+        handleClick();
+      })
+      .catch((error) => console.log(error.message));
   };
 
   function resetForm() {
     setName("");
     setPhone("");
     setEmail("");
+    setError(false);
   }
-
-  const { React_App_TOKEN: TOKEN, React_App_CHAT_ID: CHAT_ID } = env;
-  console.log(TOKEN, CHAT_ID);
-  const API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   return (
     <form className={`${formStyle}`} onSubmit={handleSubmit}>
       {section === "modal" ? (
-        <Input type={"text"} name={"Name"} placeholder={"Your name"} changeFn={setName} value={name} />
+        <Input type={"text"} name={"Name"} placeholder={"Your name"} changeFn={setName} value={name} error={error} />
       ) : (
-        <Input type={"text"} name={"Phone"} placeholder={"Your phone"} changeFn={setPhone} value={phone} />
+        <Input
+          type={"text"}
+          name={"Phone"}
+          placeholder={"Your phone"}
+          changeFn={setPhone}
+          value={phone}
+          error={error}
+        />
       )}
-      <Input type={"email"} name={"Email"} placeholder={"Your email"} changeFn={setEmail} value={email} />
+      <Input type={"email"} name={"Email"} placeholder={"Your email"} changeFn={setEmail} value={email} error={error} />
 
-      <div className="md:col-span-2 mx-auto">
+      <div className="md:col-span-2 xl:col-span-1 mx-auto">
         {section === "modal" ? (
           <Button type="button" btnStyle="contactBtn" btnClass="mt-4" aria={"Contact us"}>
             Contact us
