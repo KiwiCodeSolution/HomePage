@@ -13,7 +13,7 @@ import Testimonials from "./sections/testimonials";
 function App() {
   return (
     <div className="bg-bg-main text-txt-white font-main_en flex flex-col min-h-[100vh] relative">
-      {/* <SocialIconsList type="allSite" /> */}
+      <SocialIconsList type="allSite" />
       <Header />
       <Hero />
       <About />

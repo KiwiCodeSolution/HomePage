@@ -3,7 +3,7 @@ import Logo from "../components/UI/logo";
 import ContactList from "../components/contactList";
 import ServiсesList from "../components/services";
 import SocialIconsList from "../components/socialIconsList";
-import { scrollToTop } from "../helpers/scrollFunctions";
+import { scrollTo } from "../helpers/scrollFunctions";
 
 import { Up } from "../icons/iconComponent";
 
@@ -15,7 +15,7 @@ const Footer = () => {
         className="container min-h-[440px] px-5 md:px-10 xl:px-[120px] pt-32 pb-[84px] md:pb-[134px] mx-auto relative"
         id="contacts"
       >
-        <ul className="flex flex-col gap-y-6 md:flex-row md:gap-y-0 justify-between">
+        <ul className="flex flex-col gap-y-6 xl:flex-row xl:gap-y-0 justify-between">
           <li className="flex flex-col gap-y-10 mr-[134px]">
             <Logo />
             <SocialIconsList type={"footer"} />
@@ -29,8 +29,8 @@ const Footer = () => {
         </ul>
         <Button
           btnStyle="roundBtn"
-          btnClass={"absolute top-[150px] xl:top-[128px] right-2 md:right-0"}
-          clickFn={scrollToTop}
+          btnClass={"absolute top-[150px] xl:top-[128px] right-2 md:right-7 xl:right-0"}
+          clickFn={() => scrollTo(0)}
           aria={"go up button"}
         >
           <Up />

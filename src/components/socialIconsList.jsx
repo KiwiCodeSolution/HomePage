@@ -15,7 +15,7 @@ const SocialIconsList = ({ type }) => {
         type === "allSite"
           ? "hidden xl:flex flex-col gap-y-5 fixed top-1/2 left-[5%] -translate-y-1/4 z-20"
           : type === "footer"
-          ? "flex flex-row gap-x-6 mx-auto"
+          ? "flex flex-row gap-x-6 sm:mx-auto md:mr-auto md:ml-0 xl:mx-auto"
           : "flex gap-x-4 mx-auto"
       }`}
     >

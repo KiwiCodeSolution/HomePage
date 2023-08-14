@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import Button from "./UI/buttons";
 import { textEffect } from "../helpers/stylesHelpers";
 import LanguageBtns from "./languageBtns";
+import { scrollTo } from "../helpers/scrollFunctions";
 
 const NAV_ELEMENTS = [
   { name: "Services", linkId: "#services" },
@@ -12,11 +13,11 @@ const NAV_ELEMENTS = [
 
 const Menu = ({ type, styles, clickFn }) => {
   return (
-    <nav className="flex relative gap-x-14 md:gap-x-11 xl:gap-x-36">
+    <nav className="flex relative gap-x-14 md:gap-x-3 xl:gap-x-36">
       <ul
         className={`flex ${
           type === "header"
-            ? "items-center justify-center gap-x-3 xl:gap-x-10 w-[480px] xl:w-[548px] text-2xl font-medium"
+            ? "items-center justify-center gap-x-3 xl:gap-x-10 w-[365px] xl:w-[548px] text-lg xl:text-2xl font-medium"
             : type === "footer"
             ? ""
             : "flex-col gap-y-5 text-2xl font-medium mx-auto text-center"
@@ -31,9 +32,9 @@ const Menu = ({ type, styles, clickFn }) => {
         ))}
       </ul>
       {type !== "mobile" && (
-        <div className="flex gap-x-2 sm:gap-x-4 md:gap-x-5 xl:gap-x-6 items-center">
+        <div className="flex gap-x-2 sm:gap-x-4 md:gap-x-3 xl:gap-x-6 items-center">
           <LanguageBtns />
-          <Button btnStyle={"contactBtn"} btnType={"button"} aria={"Contact us"}>
+          <Button btnStyle={"contactBtn"} btnType={"button"} aria={"Contact us"} clickFn={() => scrollTo(4000)}>
             Contact us
           </Button>
         </div>

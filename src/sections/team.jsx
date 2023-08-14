@@ -52,7 +52,7 @@ const Team = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <SwiperNavigations swipSection={"team"} swipClass={"w-full md:w-1/4 mt-8 mx-auto md:ml-auto"} />
+        <SwiperNavigations swipSection={"team"} swipClass={"w-full xl:w-1/4 mt-8"} />
       </div>
     </section>
   );

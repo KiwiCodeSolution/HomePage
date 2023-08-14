@@ -53,7 +53,7 @@ const Portfolio = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <SwiperNavigations swipSection={"portfolio"} swipClass={"w-full md:w-1/4 mt-8 mx-auto md:ml-auto"} />
+        <SwiperNavigations swipSection={"portfolio"} swipClass={"w-full xl:w-1/4 mt-8"} />
       </div>
     </section>
   );

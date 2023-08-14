@@ -40,7 +40,7 @@ const ServiсesList = ({ type }) => {
           </Circle>
           <icons.Line />
           <p className="mt-1 mb-2 text-2xl font-medium leading-[1.4]">{title}</p>
-          <p className="text-base leading-[1.4] opacity-[0.6] text-justify">{text}</p>
+          <p className="text-base leading-[1.4] opacity-[0.6] text-justify xl:text-left">{text}</p>
         </li>
       ))}
     </ul>

@@ -1,6 +1,6 @@
 /* eslint-disable react/style-prop-object */
 import CountUp from "react-countup";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../components/UI/buttons";
 import IndicatorsList from "../components/indicators";
 import Overlay from "../components/UI/modal/overlay";
@@ -11,12 +11,33 @@ const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [blockScroll, allowScroll] = useScrollBlock();
 
+  useEffect(() => {
+    function keyDown(e) {
+      if (e.code !== "Escape") {
+        return;
+      }
+      allowScroll();
+      setIsOpen(false);
+    }
+    window.addEventListener("keydown", keyDown);
+    return () => {
+      window.removeEventListener("keydown", keyDown);
+    };
+  }, [allowScroll]);
+
+  function handleOverlayClick(e) {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+    return;
+  }
+
   function openModal() {
     blockScroll();
     setIsOpen(true);
   }
 
-  function closeModal() {
+  function closeModal(e) {
     allowScroll();
     setIsOpen(false);
   }
@@ -39,7 +60,7 @@ const Hero = () => {
         </div>
       </div>
       {isOpen && (
-        <Overlay clickFn={closeModal}>
+        <Overlay clickFn={handleOverlayClick}>
           <ModalFormContact clickFn={closeModal} />
         </Overlay>
       )}

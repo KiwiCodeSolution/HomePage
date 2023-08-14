@@ -6,7 +6,7 @@ import Button from "./UI/buttons";
 
 const SwiperNavigations = ({ swipSection, swipClass }) => {
   return (
-    <div className={`${swipClass} relative flex justify-center items-center gap-x-3`}>
+    <div className={`${swipClass} relative flex justify-center items-center gap-x-3 ml-auto`}>
       <Button btnStyle="roundBtn" btnClass={`${swipSection}-button-prev button-prev`} aria={"navigation left button"}>
         <Left />
       </Button>
