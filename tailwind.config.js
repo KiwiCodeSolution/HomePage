@@ -23,7 +23,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/public/img/hero.png')",
         aboutWave: "url('/public/img/about.png')",
-        aboutGirl: "url('/public/img/girl.png')",
+        about: "url('/public/img/girl.png')",
         modal: "url('/public/img/modal.png')",
         modalGirl: "url('/public/img/girl-modal.png')",
         testimonials: "url('/public/img/testimorials.png')",
@@ -36,6 +36,10 @@ module.exports = {
         swiper: "0px 0px 20px 10px rgba(43,209,195,0.6)",
         testimonials: "0px 0px 15px 0px rgba(143,151,150)",
         modal: "0px 4px 40px 0px rgba(56,239,125,0.60);",
+        error: "",
+        info: "",
+        warning: "",
+        success: "",
       },
       gridTemplateColumns: {},
       keyframes: {

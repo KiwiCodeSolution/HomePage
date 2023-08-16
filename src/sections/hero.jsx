@@ -11,26 +11,26 @@ const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [blockScroll, allowScroll] = useScrollBlock();
 
-  useEffect(() => {
-    function keyDown(e) {
-      if (e.code !== "Escape") {
-        return;
-      }
-      allowScroll();
-      setIsOpen(false);
-    }
-    window.addEventListener("keydown", keyDown);
-    return () => {
-      window.removeEventListener("keydown", keyDown);
-    };
-  }, [allowScroll]);
+  // useEffect(() => {
+  //   function keyDown(e) {
+  //     if (e.code !== "Escape") {
+  //       return;
+  //     }
+  //     allowScroll();
+  //     setIsOpen(false);
+  //   }
+  //   window.addEventListener("keydown", keyDown);
+  //   return () => {
+  //     window.removeEventListener("keydown", keyDown);
+  //   };
+  // }, [allowScroll]);
 
-  function handleOverlayClick(e) {
-    if (e.target === e.currentTarget) {
-      closeModal();
-    }
-    return;
-  }
+  // function handleOverlayClick(e) {
+  //   if (e.target === e.currentTarget) {
+  //     closeModal();
+  //   }
+  //   return;
+  // }
 
   function openModal() {
     blockScroll();
@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
       </div>
       {isOpen && (
-        <Overlay clickFn={handleOverlayClick}>
+        <Overlay clickFn={closeModal}>
           <ModalFormContact clickFn={closeModal} />
         </Overlay>
       )}

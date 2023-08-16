@@ -12,7 +12,8 @@ const ContactForm = ({ section, formFn }) => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
 
-  const { React_App_TOKEN: TOKEN, React_App_CHAT_ID: CHAT_ID } = env;
+  const { REACT_APP_TOKEN: TOKEN, REACT_APP_CHAT_ID: CHAT_ID } = process.env;
+  console.log(TOKEN, CHAT_ID);
 
   const API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
