@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import env from "react-dotenv";
+// import env from "react-dotenv";
 import { useState } from "react";
 
 import Button from "./UI/buttons";

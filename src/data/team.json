@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "photo": "public/img/team/Artem.jpg",
+    "photo": "/img/team/Artem.jpg",
     "name": "Artem",
     "position": "Lead designer and researcher",
     "telegram": "#",
@@ -11,7 +11,7 @@
   },
   {
     "id": "2",
-    "photo": "public/img/team/Aleksandra.jpg",
+    "photo": "/img/team/Aleksandra.jpg",
     "name": "Aleksandra",
     "position": "Designer",
     "telegram": "#",
@@ -21,7 +21,7 @@
   },
   {
     "id": "3",
-    "photo": "public/img/team/Sander.jpg",
+    "photo": "/img/team/Sander.jpg",
     "name": "Sander",
     "position": "Teamlead",
     "telegram": "#",
@@ -31,7 +31,7 @@
   },
   {
     "id": "4",
-    "photo": "public/img/team/Hardin.jpg",
+    "photo": "/img/team/Hardin.jpg",
     "name": "Aleksandr",
     "position": "Fullstack Developer",
     "telegram": "#",
@@ -41,7 +41,7 @@
   },
   {
     "id": "5",
-    "photo": "public/img/team/Tolmachov_cleared.jpg",
+    "photo": "/img/team/Tolmachov_cleared.jpg",
     "name": "Alexey",
     "position": "DevOps and back-end",
     "telegram": "#",
@@ -51,7 +51,7 @@
   },
   {
     "id": "6",
-    "photo": "public/img/team/Poduzova.jpg",
+    "photo": "/img/team/Poduzova.jpg",
     "name": "Evhenija",
     "position": "Fullstack Developer",
     "telegram": "#",
@@ -61,7 +61,7 @@
   },
   {
     "id": "7",
-    "photo": "public/img/no-image.png",
+    "photo": "/img/no-image.png",
     "name": "Name",
     "position": "Position",
     "telegram": "#",
@@ -71,7 +71,7 @@
   },
   {
     "id": "8",
-    "photo": "public/img/no-image.png",
+    "photo": "/img/no-image.png",
     "name": "Name",
     "position": "Position",
     "telegram": "#",
@@ -81,7 +81,7 @@
   },
   {
     "id": "9",
-    "photo": "public/img/no-image.png",
+    "photo": "/img/no-image.png",
     "name": "Name",
     "position": "Position",
     "telegram": "#",
@@ -91,7 +91,7 @@
   },
   {
     "id": "10",
-    "photo": "public/img/no-image.png",
+    "photo": "/img/no-image.png",
     "name": "Name",
     "position": "Position",
     "telegram": "#",

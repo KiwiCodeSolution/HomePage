@@ -5,7 +5,7 @@ import useScrollBlock from "../../../hooks/useScrollBlock";
 
 const modalRoot = document.querySelector("#modal-root");
 
-const Overlay = ({ children, clickFn, overlayClass }) => {
+const Overlay = ({ children, clickFn, overlayClass, type }) => {
   const [blockScroll, allowScroll] = useScrollBlock();
 
   useEffect(() => {
@@ -44,6 +44,7 @@ Overlay.propTypes = {
   children: PropTypes.node.isRequired,
   clickFn: PropTypes.func.isRequired,
   overlayClass: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default Overlay;

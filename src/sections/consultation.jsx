@@ -1,7 +1,8 @@
 import SubTitle from "../components/UI/subTitle";
-import Title from "../components/UI/title";
+import { MTitle } from "../components/UI/title";
 import ContactForm from "../components/contactForm";
 import TableItem from "../components/tableItem";
+import { titleAnimation } from "../helpers/stylesHelpers";
 
 const ITEMS = [
   { id: "1", title: "Consultation", text: "Get detailed consultation from manager and expert for your area" },
@@ -14,7 +15,9 @@ const Consultation = () => {
   return (
     <section className="bg-bg-main z-10">
       <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pt-8 pb-[100px] md:pb-4 relative">
-        <Title>Consultation of the Area Expert</Title>
+        <MTitle variants={titleAnimation} initial="hidden" whileInView="visible">
+          Consultation of the Area Expert
+        </MTitle>
         <SubTitle subTitleClass={"max-w-[452px] uppercase mb-8"}>During consultation you will:</SubTitle>
 
         <ul className="w-[335px] h-full md:w-[690px] xl:w-[866px] md:h-[234px] grid grid-cols-1 md:grid-cols-2 border-[0.5px] border-bg-green border-opacity-[.4] mb-6 xl:mb-[108px] ">

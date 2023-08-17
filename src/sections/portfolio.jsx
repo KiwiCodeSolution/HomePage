@@ -3,18 +3,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 
-import Title from "../components/UI/title";
+import { MTitle } from "../components/UI/title";
 import items from "../data/portfolio.json";
 
 import PortfolioCard from "../components/portfolioCard";
 import SubTitle from "../components/UI/subTitle";
 import SwiperNavigations from "../components/swiperNavigations";
+import { titleAnimation } from "../helpers/stylesHelpers";
 
 const Portfolio = () => {
   return (
     <section className="bg-bg-main z-10">
       <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pt-8 pb-4 relative" id="portfolio">
-        <Title>Portfolio</Title>
+        <MTitle variants={titleAnimation} initial="hidden" whileInView="visible">
+          Portfolio
+        </MTitle>
         <SubTitle subTitleClass={"max-w-[452px] mb-6 xl:mb-10"}>
           We present examples of work that has already been implemented by our team.
         </SubTitle>
