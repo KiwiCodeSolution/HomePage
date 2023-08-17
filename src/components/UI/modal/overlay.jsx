@@ -6,7 +6,7 @@ import useScrollBlock from "../../../hooks/useScrollBlock";
 const modalRoot = document.querySelector("#modal-root");
 
 const Overlay = ({ children, clickFn, overlayClass, type }) => {
-  const [blockScroll, allowScroll] = useScrollBlock();
+  const [ allowScroll] = useScrollBlock();
 
   useEffect(() => {
     function keyDown(e) {

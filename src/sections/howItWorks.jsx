@@ -34,7 +34,7 @@ const HowItWorks = () => {
 
   return (
     <section className="bg-bg-main z-10">
-      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] relative h-full xl:h-[470px] pb-7 xl:pb-[169px]">
+      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] relative h-full pb-7 xl:pb-[100px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="flex flex-col relative order-2 md:order-1">
             <MTitle variants={titleAnimation} initial="hidden" whileInView="visible">

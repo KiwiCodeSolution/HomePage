@@ -64,8 +64,29 @@ module.exports = {
             transform: "translateX(0)",
           },
         },
+        pulsation: {
+          "50%": { transform: "scale(1); opacity: 1" },
+          "0%, 100%": { transform: "scale(1.05); opacity: 0.8" },
+        },
+        ripple: {
+          "0%": {
+            boxShadow: " 0 0 0 0 rgba(43,209,195,0.6)",
+          },
+          "60%": {
+            boxShadow: "0 0 0 20px rgba(43,209,195,0)",
+          },
+          "100%": {
+            boxShadow: "0 0 0 0 rgba(43,209,195,0)",
+          },
+        },
       },
-      animation: { up: "up", right: "right 2s ease-in-out", hover: "hover 2s ease-in-out" },
+      animation: {
+        up: "up",
+        right: "right 2s ease-in-out",
+        hover: "hover 2s ease-in-out",
+        pulsation: "pulsation 3s ease-in-out infinite",
+        ripple: "ripple 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

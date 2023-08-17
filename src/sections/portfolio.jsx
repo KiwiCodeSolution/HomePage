@@ -14,7 +14,7 @@ import { titleAnimation } from "../helpers/stylesHelpers";
 const Portfolio = () => {
   return (
     <section className="bg-bg-main z-10">
-      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pt-8 pb-4 relative" id="portfolio">
+      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pt-8 pb-4 xl:pb-14 relative" id="portfolio">
         <MTitle variants={titleAnimation} initial="hidden" whileInView="visible">
           Portfolio
         </MTitle>

@@ -9,13 +9,13 @@ const SERVICES = [
     id: "1",
     Icon: icons.Design,
     title: "UI / UX Design",
-    text: " The process of developing UI/UX design for websites includes analyzing the target audience and their needs, creating ideas and design concepts, developing prototypes and testing them for user experience, as well as  defining the color palette, fonts, and other design elements.",
+    text: "The process of developing UI/UX design for websites includes analyzing the target audience and their needs, creating ideas and design concepts, developing prototypes and testing them for user experience, as well as  defining the color palette, fonts, and other design elements.",
   },
   {
     id: "2",
     Icon: icons.Marketing,
     title: "Omnichannel Marketing",
-    text: " Omnichannel marketing is a marketing strategy that involves using various communication channels withcustomers, such as email, social media, mobile apps, SMS messages, and others, to create a seamless and consistent experience of interacting with a brand regardless of the customer's chosen communication channel.",
+    text: "Omnichannel marketing is a marketing strategy that involves using various communication channels withcustomers, such as email, social media, mobile apps, SMS messages, and others, to create a seamless and consistent experience of interacting with a brand regardless of the customer's chosen communication channel.",
   },
   {
     id: "3",

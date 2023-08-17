@@ -14,7 +14,7 @@ const ITEMS = [
 const Consultation = () => {
   return (
     <section className="bg-bg-main z-10">
-      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pt-8 pb-[100px] md:pb-4 relative">
+      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pt-8 pb-[100px] md:pb-4 xl:pb-[100px] relative">
         <MTitle variants={titleAnimation} initial="hidden" whileInView="visible">
           Consultation of the Area Expert
         </MTitle>
