@@ -2,20 +2,20 @@ import * as icons from "../icons/iconComponent";
 import PropTypes from "prop-types";
 
 const SOC_ITEMS = [
-  { id: "git", Icon: icons.Git, link: "#" },
   { id: "tg", Icon: icons.Tg, link: "#" },
   { id: "inst", Icon: icons.Inst, link: "#" },
   { id: "linkId", Icon: icons.LinkId, link: "#" },
+  { id: "behance", Icon: icons.Behance, link: "#" },
 ];
 
 const SocialIconsList = ({ type }) => {
   return (
     <ul
-      className={`h-full ${
+      className={` ${
         type === "allSite"
-          ? "hidden xl:flex flex-col gap-y-5 fixed top-1/2 left-[5%] -translate-y-1/4 z-20"
+          ? "h-full hidden xl:flex flex-col gap-y-5 fixed top-1/2 left-[5%] -translate-y-1/4 z-20"
           : type === "footer"
-          ? "flex flex-row gap-x-6 sm:mx-auto md:mr-auto md:ml-0 xl:mx-auto"
+          ? "flex flex-row gap-x-6 sm:mx-auto md:mr-auto md:ml-3"
           : "flex gap-x-4 mx-auto"
       }`}
     >

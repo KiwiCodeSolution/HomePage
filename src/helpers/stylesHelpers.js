@@ -17,3 +17,11 @@ export const titleAnimation = {
     transition: { delay: 0.3, duration: 0.7 },
   },
 };
+
+export const blocAnimation = {
+  hidden: {
+    scale: 0,
+    opacity: 0,
+  },
+  visible: (custom) => ({ scale: 1, opacity: 1, transition: { delay: custom * 0.3, duration: 0.7 } }),
+};

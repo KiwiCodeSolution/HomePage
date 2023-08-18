@@ -56,7 +56,7 @@ const ContactForm = ({ section, formFn }) => {
   }
 
   return (
-    <form className={`${formStyle}`} onSubmit={handleSubmit}>
+    <form className={`${formStyle}`} onSubmit={handleSubmit} id="form">
       {section === "modal" ? (
         <Input type={"text"} name={"Name"} placeholder={"Your name"} changeFn={setName} value={name} error={error} />
       ) : (

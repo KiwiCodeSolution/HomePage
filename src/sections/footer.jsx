@@ -15,12 +15,13 @@ const Footer = () => {
         className="container min-h-[440px] px-5 md:px-10 xl:px-[120px] pt-32 pb-[84px] md:pb-[134px] mx-auto relative"
         id="contacts"
       >
-        <ul className="flex flex-col gap-y-6 xl:flex-row xl:gap-y-0 justify-between">
-          <li className="flex flex-col gap-y-10 mr-[134px]">
+        <ul className="flex gap-y-2 md:gap-x-4 xl:gap-y-0 xl:gap-x-2 justify-between">
+          <li className="flex flex-col gap-y-10 xl:w-[240px] justify-center">
             <Logo />
             <SocialIconsList type={"footer"} />
           </li>
-          <li className="md:mr-[91px]">
+          <li className="flex flex-col">
+            <p className="text-2xl mb-2">Services: </p>
             <ServiсesList />
           </li>
           <li>

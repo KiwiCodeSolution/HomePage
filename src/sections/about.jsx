@@ -3,8 +3,11 @@ import ServiсesList from "../components/services";
 
 import { MTitle } from "../components/UI/title";
 import { titleAnimation } from "../helpers/stylesHelpers";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   const serviceAnimation = {
     hidden: {
       x: -100,
@@ -37,19 +40,21 @@ const About = () => {
               custom={1}
               variants={serviceAnimation}
             >
-              <span className="text-2xl text-txt-white">KiWiCode Solution</span> is an innovative IT company that
-              provides comprehensive solutions in UI/UX design, desktop application development, and marketing. The
-              company has many years of experience in creating high-quality projects for clients worldwide, and they
-              focus on meeting the individual needs and requirements of each client.
+              {t("about_history")}
             </motion.li>
             <motion.li
-              className="animate-right w-full text-justify xl:text-left"
+              className="animate-right max-w-full text-justify xl:text-left"
               custom={2}
               variants={serviceAnimation}
             >
-              <span className="text-2xl text-txt-white">KiWiCode Solution</span> guarantees high-quality work and uses
-              the latest technological solutions to ensure the success of its clients in the business sphere. They also
-              provide ongoing support and technical assistance to their clients even after completing the project.
+              {t("about_team")}
+            </motion.li>
+            <motion.li
+              className="animate-right max-w-full text-justify xl:text-left"
+              custom={3}
+              variants={serviceAnimation}
+            >
+              {t("about_value")}
             </motion.li>
           </motion.ul>
         </div>

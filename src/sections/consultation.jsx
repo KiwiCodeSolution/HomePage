@@ -29,7 +29,7 @@ const Consultation = () => {
           <img
             src="/img/girl-1.png"
             alt="girl"
-            className="hidden xl:inline w-[613px] h-[613px] absolute bottom-[102px] right-[-70px]"
+            className="hidden xl:inline w-[500px] h-[500px] absolute bottom-[102px] right-0"
           />
           <ContactForm section="consultation" />
         </div>

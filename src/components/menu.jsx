@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import Button from "./UI/buttons";
 import { textEffect } from "../helpers/stylesHelpers";
 import LanguageBtns from "./languageBtns";
-import { scrollTo } from "../helpers/scrollFunctions";
 
 const NAV_ELEMENTS = [
   { name: "Services", linkId: "#services" },
@@ -34,9 +33,11 @@ const Menu = ({ type, styles, clickFn }) => {
       {type !== "mobile" && (
         <div className="flex gap-x-2 sm:gap-x-4 md:gap-x-3 xl:gap-x-6 items-center">
           <LanguageBtns />
-          <Button btnStyle={"contactBtn"} btnType={"button"} aria={"Contact us"} clickFn={() => scrollTo(4000)}>
-            Contact us
-          </Button>
+          <a href="#form">
+            <Button btnStyle={"contactBtn"} btnType={"button"} aria={"Contact us"}>
+              Contact us
+            </Button>
+          </a>
         </div>
       )}
     </nav>

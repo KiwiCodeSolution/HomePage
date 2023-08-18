@@ -7,7 +7,7 @@ import Header from "./sections/header";
 import Hero from "./sections/hero";
 import HowItWorks from "./sections/howItWorks";
 import Portfolio from "./sections/portfolio";
-import Team from "./sections/team";
+
 import Testimonials from "./sections/testimonials";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <About />
       <HowItWorks />
       <Portfolio />
-      <Team />
+
       <Consultation />
       <Testimonials />
       <Footer />

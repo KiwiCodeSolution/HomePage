@@ -1,3 +1,5 @@
+import { EffectCards } from "swiper/modules";
+
 export const Menu = () => (
   <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clipPath="url(#clip0_710_3556)">
@@ -108,6 +110,34 @@ export const LinkId = () => (
     <path
       d="M10.9399 8.99999C10.9397 9.53043 10.7287 10.039 10.3534 10.4139C9.97819 10.7888 9.46937 10.9993 8.93894 10.999C8.40851 10.9987 7.89991 10.7878 7.52502 10.4125C7.15014 10.0372 6.93968 9.52843 6.93994 8.99799C6.94021 8.46756 7.15117 7.95896 7.52644 7.58407C7.9017 7.20919 8.41051 6.99873 8.94094 6.99899C9.47137 6.99926 9.97998 7.21023 10.3549 7.58549C10.7297 7.96075 10.9402 8.46956 10.9399 8.99999ZM10.9999 12.48H6.99994V25H10.9999V12.48ZM17.3199 12.48H13.3399V25H17.2799V18.43C17.2799 14.77 22.0499 14.43 22.0499 18.43V25H25.9999V17.07C25.9999 10.9 18.9399 11.13 17.2799 14.16L17.3199 12.48Z"
       fill="#38EF7D"
+    />
+  </svg>
+);
+
+export const Behance = ({ className }) => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    <circle opacity="0.2" cx="16" cy="16" r="15.5" stroke="#38EF7D" />
+    <path
+      d="M6 16H13C14.7 16 16 17.3 16 19C16 20.7 14.7 22 13 22H7C6.4 22 6 21.6 6 21V11C6 10.4 6.4 10 7 10H12C13.7 10 15 11.3 15 13C15 14.7 13.7 16 12 16H6Z"
+      stroke="#38EF7D"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+    />
+    <path
+      d="M18 18H26C26 15.8 24.2 14 22 14C19.8 14 18 15.8 18 18ZM18 18C18 20.2 19.8 22 22 22H23.7"
+      stroke="#38EF7D"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M23.5 11.5H20.5"
+      stroke="#38EF7D"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -366,6 +396,224 @@ export const Marketing = ({ className }) => (
   </svg>
 );
 
+export const Forecasting = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" className={className}>
+    <path d="M11.4666 30.25V26.8" stroke="url(#paint0_linear_2144_454)" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M20 30.25V23.35" stroke="url(#paint1_linear_2144_454)" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M28.5334 30.25V19.8833" stroke="url(#paint2_linear_2144_454)" strokeWidth="1.5" strokeLinecap="round" />
+    <path
+      d="M28.5332 9.75L27.7666 10.65C23.5166 15.6167 17.8166 19.1333 11.4666 20.7167"
+      stroke="url(#paint3_linear_2144_454)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M23.6499 9.75H28.5332V14.6167"
+      stroke="url(#paint4_linear_2144_454)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M14.9999 36.6667H24.9999C33.3333 36.6667 36.6666 33.3333 36.6666 25V15C36.6666 6.66667 33.3333 3.33333 24.9999 3.33333H14.9999C6.66659 3.33333 3.33325 6.66667 3.33325 15V25C3.33325 33.3333 6.66659 36.6667 14.9999 36.6667Z"
+      stroke="url(#paint5_linear_2144_454)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_2144_454"
+        x1="11.9666"
+        y1="26.8"
+        x2="11.9666"
+        y2="30.25"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_2144_454"
+        x1="20.5"
+        y1="23.35"
+        x2="20.5"
+        y2="30.25"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint2_linear_2144_454"
+        x1="29.0334"
+        y1="19.8833"
+        x2="29.0334"
+        y2="30.25"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint3_linear_2144_454"
+        x1="19.9999"
+        y1="9.75"
+        x2="19.9999"
+        y2="20.7167"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint4_linear_2144_454"
+        x1="26.0916"
+        y1="9.75"
+        x2="26.0916"
+        y2="14.6167"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint5_linear_2144_454"
+        x1="19.9999"
+        y1="3.33333"
+        x2="19.9999"
+        y2="36.6667"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const Consultations = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" className={className}>
+    <path
+      d="M14.9999 36.6666H24.9999C33.3333 36.6666 36.6666 33.3333 36.6666 25V15C36.6666 6.66665 33.3333 3.33331 24.9999 3.33331H14.9999C6.66659 3.33331 3.33325 6.66665 3.33325 15V25C3.33325 33.3333 6.66659 36.6666 14.9999 36.6666Z"
+      stroke="url(#paint0_linear_2144_464)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12.2166 24.15L16.1832 19C16.7499 18.2666 17.7999 18.1333 18.5332 18.7L21.5832 21.1C22.3166 21.6666 23.3666 21.5333 23.9332 20.8166L27.7832 15.85"
+      stroke="url(#paint1_linear_2144_464)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_2144_464"
+        x1="19.9999"
+        y1="3.33331"
+        x2="19.9999"
+        y2="36.6666"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_2144_464"
+        x1="19.9999"
+        y1="15.85"
+        x2="19.9999"
+        y2="24.15"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const Software = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" className={className}>
+    <path
+      d="M15.0002 21.6667C13.9002 22.2167 12.9835 23.0334 12.3002 24.05C11.9169 24.6334 11.9169 25.3667 12.3002 25.95C12.9835 26.9667 13.9002 27.7834 15.0002 28.3334"
+      stroke="url(#paint0_linear_2144_446)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M25.3501 21.6667C26.4501 22.2167 27.3668 23.0334 28.0501 24.05C28.4334 24.6334 28.4334 25.3667 28.0501 25.95C27.3668 26.9667 26.4501 27.7834 25.3501 28.3334"
+      stroke="url(#paint1_linear_2144_446)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M15.0002 36.6666H25.0002C33.3335 36.6666 36.6668 33.3333 36.6668 25V15C36.6668 6.66665 33.3335 3.33331 25.0002 3.33331H15.0002C6.66683 3.33331 3.3335 6.66665 3.3335 15V25C3.3335 33.3333 6.66683 36.6666 15.0002 36.6666Z"
+      stroke="url(#paint2_linear_2144_446)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M3.7168 13.35L35.7501 13.3333"
+      stroke="url(#paint3_linear_2144_446)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_2144_446"
+        x1="13.5064"
+        y1="21.6667"
+        x2="13.5064"
+        y2="28.3334"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_2144_446"
+        x1="26.8438"
+        y1="21.6667"
+        x2="26.8438"
+        y2="28.3334"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint2_linear_2144_446"
+        x1="20.0002"
+        y1="3.33331"
+        x2="20.0002"
+        y2="36.6666"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint3_linear_2144_446"
+        x1="19.7335"
+        y1="13.3333"
+        x2="19.7335"
+        y2="13.35"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
 export const Line = () => (
   <svg width="133" height="1" viewBox="0 0 133 1" fill="none" xmlns="http://www.w3.org/2000/svg">
     <line opacity="0.1" y1="0.5" x2="133" y2="0.5" stroke="white" />
@@ -513,5 +761,11 @@ export const Up = ({ className }) => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
     <path d="M4.99998 9C4.99998 9 8.04737 5.95262 9.99999 3.99999L15 9" stroke="white" strokeWidth="1.8" />
     <path d="M10 4V16" stroke="white" strokeWidth="1.8" />
+  </svg>
+);
+
+export const NextStep = ({ className }) => (
+  <svg width="140" height="90" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    <path d="M31 16l-15-15v9h-16v12h16v9z" stroke="#38EF7D" />
   </svg>
 );
