@@ -4,16 +4,20 @@ import { useState } from "react";
 
 import Button from "./UI/buttons";
 import Input from "./UI/input";
+import { useTranslation } from "react-i18next";
+import Notification from "./notification";
 
 const ContactForm = ({ section, formFn }) => {
+  const { t } = useTranslation();
   const handleClick = () => (formFn ? formFn() : null);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
+  const [showNotificationSucess, setShowNotificationSucess] = useState(false);
+  const [showNotificationError, setShowNotificationError] = useState(false);
 
   const { REACT_APP_TOKEN: TOKEN, REACT_APP_CHAT_ID: CHAT_ID } = process.env;
-  console.log(TOKEN, CHAT_ID);
 
   const API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
@@ -42,10 +46,20 @@ const ContactForm = ({ section, formFn }) => {
 
     fetch(`${API}?chat_id=${CHAT_ID}&text=${message}&parse_mode=html`)
       .then((res) => {
-        resetForm();
-        handleClick();
+        setShowNotificationSucess(true);
+        setTimeout(() => {
+          resetForm();
+          handleClick();
+          setShowNotificationSucess(false);
+        }, 3000);
       })
-      .catch((error) => console.log(error.message));
+      .catch((error) => {
+        setShowNotificationError(true);
+
+        setTimeout(() => {
+          setShowNotificationError(false);
+        }, 3000);
+      });
   };
 
   function resetForm() {
@@ -56,33 +70,63 @@ const ContactForm = ({ section, formFn }) => {
   }
 
   return (
-    <form className={`${formStyle}`} onSubmit={handleSubmit} id="form">
-      {section === "modal" ? (
-        <Input type={"text"} name={"Name"} placeholder={"Your name"} changeFn={setName} value={name} error={error} />
-      ) : (
+    <>
+      <form className={`${formStyle}`} onSubmit={handleSubmit} id="form">
+        {section === "modal" ? (
+          <Input
+            type={"text"}
+            name={t(`input.name`)}
+            placeholder={t(`input.placeholder_name`)}
+            changeFn={setName}
+            value={name}
+            error={error}
+          />
+        ) : (
+          <Input
+            type={"text"}
+            name={t(`input.phone`)}
+            placeholder={t(`input.placeholder_phone`)}
+            changeFn={setPhone}
+            value={phone}
+            error={error}
+          />
+        )}
         <Input
-          type={"text"}
-          name={"Phone"}
-          placeholder={"Your phone"}
-          changeFn={setPhone}
-          value={phone}
+          type={"email"}
+          name={t(`input.email`)}
+          placeholder={t(`input.placeholder_email`)}
+          changeFn={setEmail}
+          value={email}
           error={error}
         />
-      )}
-      <Input type={"email"} name={"Email"} placeholder={"Your email"} changeFn={setEmail} value={email} error={error} />
 
-      <div className="md:col-span-2 xl:col-span-1 mx-auto">
-        {section === "modal" ? (
-          <Button type="button" btnStyle="contactBtn" btnClass="mt-4" aria={"Contact us"}>
-            Contact us
-          </Button>
-        ) : (
-          <Button type="submit" btnStyle="startedBtn" aria={"Get Started"} btnClass={btnFormStyle}>
-            Get Started
-          </Button>
-        )}
-      </div>
-    </form>
+        <div className="md:col-span-2 xl:col-span-1 mx-auto">
+          {section === "modal" ? (
+            <Button type="button" btnStyle="contactBtn" btnClass="mt-4" aria={"Contact us"}>
+              {t(`buttons.1`)}
+            </Button>
+          ) : (
+            <Button type="submit" btnStyle="startedBtn" aria={"Get Started"} btnClass={btnFormStyle}>
+              {t(`buttons.0`)}
+            </Button>
+          )}
+        </div>
+      </form>
+      {showNotificationSucess && (
+        <Notification
+          type={"success"}
+          text="Contacts sent! We will contact you shortly!"
+          clickFn={() => setShowNotificationSucess(!showNotificationSucess)}
+        />
+      )}
+      {showNotificationError && (
+        <Notification
+          type={"error"}
+          text="Oops, something happened! Please try again!"
+          clickFn={() => setShowNotificationError(!showNotificationError)}
+        />
+      )}
+    </>
   );
 };
 

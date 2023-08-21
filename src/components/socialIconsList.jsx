@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 const SOC_ITEMS = [
   { id: "tg", Icon: icons.Tg, link: "#" },
-  { id: "inst", Icon: icons.Inst, link: "#" },
-  { id: "linkId", Icon: icons.LinkId, link: "#" },
+  { id: "inst", Icon: icons.Inst, link: "https://www.instagram.com/kiwicode_solutions/" },
+  { id: "linkId", Icon: icons.LinkId, link: "https://www.linkedin.com/company/kiwicodesolution" },
   { id: "behance", Icon: icons.Behance, link: "#" },
 ];
 

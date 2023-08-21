@@ -36,7 +36,7 @@ const SERVICES = [
 ];
 
 const ServiсesList = ({ type }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const textAnimation = {
     hidden: {

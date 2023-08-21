@@ -1,4 +1,13 @@
 {
+  "nav": ["Services", "Portfolio", "About company", "Contacts"],
+  "hero": [
+    "Full cycle",
+    "development",
+    "and",
+    "support",
+    "of your product",
+    "We specialize in implementing innovative technologies and software developments that help well-known clients achieve success in the market. Bring on the global intelligence of business processes and today's IT trends that create products and services that redefine smarts and remain the core of competitive edge"
+  ],
   "services": [
     {
       "title": "Business consultations",
@@ -27,6 +36,7 @@
       "text": "Our team of experts will thoroughly analyze your data, identify patterns and trends, based on which you can build accurate forecasts of future events. We will provide you with detailed market research, competitor analysis and consumer trends to help you adapt to changes in the environment."
     }
   ],
+  "buttons": ["Get started", "Contact us"],
 
   "about_history": "KiWiCode Solutions was founded by a group of enthusiasts united by a common passion for technology. Since then, we have been on the path from a startup to a respected IT company providing modern solutions for any business.",
   "about_team": "Our experts are our most valuable asset. Each member of our team has unique skills and experience that we are proud to use to achieve your goals. We always appreciate new people in the team and are happy to meet new people.",
@@ -49,5 +59,65 @@
       "title": "Partnership:",
       "text": "We don't see you as customers, we see you as partners. We strive to build long-term relationships based on mutual trust and cooperation."
     }
-  ]
+  ],
+  "title": {
+    "portfolio": "Portfolio",
+    "about": "About company",
+    "consultation": "Consultation of the Area Expert",
+    "team": "Our Team",
+    "testimonials": "Testimonials",
+    "how": "How it Works",
+    "modal": "Consultation of the area expert"
+  },
+  "subtitle": {
+    "portfolio": "We present examples of work that has already been implemented by our team.",
+    "consultation": "During consultation you will:",
+    "team": "Our team offers a full range of layout development services to testing the finished proposal.",
+    "modal": "More than 4+ ears of experience that helps build effective process."
+  },
+  "tablet": [
+    { "title": "Consultation", "text": "Get detailed consultation from manager and expert for your area" },
+    { "title": "Define tasks", "text": "Define tasks, goals, business needs and project concept" },
+    { "title": "Short overview", "text": "Short overview of KiWiCode Solution portfolio and best practice" },
+    { "title": "Determine the scope", "text": "Determine the scope, boundaries of the project and expectations" }
+  ],
+  "input": {
+    "error": "is required",
+    "name": "Name",
+    "placeholder_name": "Your name",
+    "phone": "Phone",
+    "placeholder_phone": "Your phone",
+    "email": "Email",
+    "placeholder_email": "Your email"
+  },
+  "adress": ["Adress", "3891 Ranchview Dr. Richardson, California 62639"],
+  "phone": "Phone",
+  "response": [
+    {
+      "name": "Mohammad Faruque",
+      "company": "company 1",
+      "text": "1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+    },
+    {
+      "name": "Jonathan Borba",
+      "company": "company 2",
+      "text": "2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+    },
+    {
+      "name": "Joseph Gonzalez",
+      "company": "company 3",
+      "text": "3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+    },
+    {
+      "name": "Mubariz Mehdizadeh",
+      "company": "company 4",
+      "text": "4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+    },
+    {
+      "name": "Joshua Rondeau",
+      "company": "company 5",
+      "text": "5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+    }
+  ],
+  "footer": ["Services:"]
 }

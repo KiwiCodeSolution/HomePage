@@ -7,8 +7,10 @@ import Button from "../components/UI/buttons";
 import Overlay from "../components/UI/modal/overlay";
 import ModalFormContact from "../components/UI/modal/modalFormContact";
 import useScrollBlock from "../hooks/useScrollBlock";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [blockScroll, allowScroll] = useScrollBlock();
 
@@ -43,17 +45,13 @@ const Hero = () => {
             variants={textAnimation}
             className="w-[311px] xl:w-[750px] text-[34px] xl:text-[64px] font-bold leading-[1.4] mb-14 xl:mb-8"
           >
-            Full cycle <span className="accent">development</span> and
-            <span className="accent"> support</span> of your product
+            {t(`hero.0`)} <span className="accent">{t(`hero.1`)}</span> {t(`hero.2`)}
+            <span className="accent"> {t(`hero.3`)}</span> {t(`hero.4`)}
           </motion.h1>
-          <p className="text-base xl:text-2xl leading-[1.6] w-[301px] xl:w-[600px] mb-3 xl:mb-10 z-10">
-            We specialize in implementing innovative technologies and software developments that help well-known clients
-            achieve success in the market. Bring on the global intelligence of business processes and today's IT trends
-            that create products and services that redefine smarts and remain the core of competitive edge
-          </p>
+          <p className="text-base xl:text-2xl leading-[1.6] w-[301px] xl:w-[600px] mb-3 xl:mb-10 z-10">{t(`hero.5`)}</p>
 
           <Button btnStyle="startedBtn" clickFn={openModal} aria={"open pop-up button"}>
-            Get started
+            {t(`buttons.0`)}
           </Button>
         </div>
       </div>

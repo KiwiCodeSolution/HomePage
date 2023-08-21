@@ -27,7 +27,7 @@ const About = () => {
         <ServiсesList type={"about"} />
         <div className="about bg-no-repeat bg-right-top min-h-[640px]">
           <MTitle variants={titleAnimation} initial="hidden" whileInView="visible">
-            About company
+            {t(`title.about`)}
           </MTitle>
           <motion.ul
             className="flex flex-col gap-y-6 w-[335px] xl:w-[514px] text-xl text-txt-grey mt-8"

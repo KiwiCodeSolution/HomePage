@@ -1,10 +1,66 @@
 [
-  { "id": "1", "urlImage": "/img/portfolio/portfolio_1.jpg", "urlProject": "#", "alt": "our portfolio, preview" },
-  { "id": "2", "urlImage": "/img/portfolio/portfolio_2.jpg", "urlProject": "#", "alt": "our portfolio, preview" },
-  { "id": "3", "urlImage": "/img/portfolio/portfolio_3.jpg", "urlProject": "#", "alt": "our portfolio, preview" },
-  { "id": "4", "urlImage": "/img/portfolio/portfolio_4.jpg", "urlProject": "#", "alt": "our portfolio, preview" },
-  { "id": "5", "urlImage": "/img/portfolio/portfolio_5.jpg", "urlProject": "#", "alt": "our portfolio, preview" },
-  { "id": "6", "urlImage": "/img/portfolio/portfolio_6.jpg", "urlProject": "#", "alt": "our portfolio, preview" },
-  { "id": "7", "urlImage": "/img/portfolio/portfolio_7.jpg", "urlProject": "#", "alt": "our portfolio, preview" },
-  { "id": "8", "urlImage": "/img/portfolio/portfolio_8.jpg", "urlProject": "#", "alt": "our portfolio, preview" }
+  {
+    "id": "1",
+    "urlImage": "/img/portfolio/portfolio_1.jpg",
+    "urlProject": "#",
+    "alt": "our portfolio, preview",
+    "text": "Text for id 1",
+    "title": "Title for id 1"
+  },
+  {
+    "id": "2",
+    "urlImage": "/img/portfolio/portfolio_2.jpg",
+    "urlProject": "#",
+    "alt": "our portfolio, preview",
+    "text": "Text for id 2",
+    "title": "Title for id 2"
+  },
+  {
+    "id": "3",
+    "urlImage": "/img/portfolio/portfolio_3.jpg",
+    "urlProject": "#",
+    "alt": "our portfolio, preview",
+    "text": "Text for id 3",
+    "title": "Title for id 3"
+  },
+  {
+    "id": "4",
+    "urlImage": "/img/portfolio/portfolio_4.jpg",
+    "urlProject": "#",
+    "alt": "our portfolio, preview",
+    "text": "Text for id 4",
+    "title": "Title for id 4"
+  },
+  {
+    "id": "5",
+    "urlImage": "/img/portfolio/portfolio_5.jpg",
+    "urlProject": "#",
+    "alt": "our portfolio, preview",
+    "text": "Text for id 5",
+    "title": "Title for id 5"
+  },
+  {
+    "id": "6",
+    "urlImage": "/img/portfolio/portfolio_6.jpg",
+    "urlProject": "#",
+    "alt": "our portfolio, preview",
+    "text": "Text for id 6",
+    "title": "Title for id 6"
+  },
+  {
+    "id": "7",
+    "urlImage": "/img/portfolio/portfolio_7.jpg",
+    "urlProject": "#",
+    "alt": "our portfolio, preview",
+    "text": "Text for id 7",
+    "title": "Title for id 7"
+  },
+  {
+    "id": "8",
+    "urlImage": "/img/portfolio/portfolio_8.jpg",
+    "urlProject": "#",
+    "alt": "our portfolio, preview",
+    "text": "Text for id 8",
+    "title": "Title for id 8"
+  }
 ]
