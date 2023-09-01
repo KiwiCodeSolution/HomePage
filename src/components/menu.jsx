@@ -18,7 +18,7 @@ const Menu = ({ type, styles, clickFn }) => {
       <ul
         className={`flex ${
           type === "header"
-            ? "items-center justify-center gap-x-3 xl:gap-x-10 w-[365px] xl:w-[600px] text-lg xl:text-2xl font-medium"
+            ? "items-center justify-between gap-x-3 w-[365px] xl:w-[600px] text-lg xl:text-2xl font-medium"
             : type === "footer"
             ? ""
             : "flex-col gap-y-5 text-2xl font-medium mx-auto text-center"

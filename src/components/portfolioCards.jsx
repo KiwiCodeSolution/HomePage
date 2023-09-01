@@ -28,7 +28,7 @@ const PortfolioCards = () => {
   };
 
   return (
-    <ul className="flex justify-around h-[380px] gap-x-2">
+    <ul className="hidden xl:flex justify-around h-[380px] gap-x-2">
       {items.map((el) => (
         <motion.li
           key={el.id}

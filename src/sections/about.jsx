@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <section className="bg-bg-main bg-aboutWave bg-no-repeat bg-[center_top_-8rem] z-10">
-      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] md:pb-[64px] relative h-full" id="about">
+      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pb-12 md:pb-[64px] relative h-full" id="about">
         <div className="w-full h-20 -top-[75px] left-0 absolute gradient" />
         <ServiсesList type={"about"} />
         <div className="about bg-no-repeat bg-right-top min-h-[640px]">
@@ -30,7 +30,7 @@ const About = () => {
             {t(`title.about`)}
           </MTitle>
           <motion.ul
-            className="flex flex-col gap-y-6 w-[335px] xl:w-[514px] text-xl text-txt-grey mt-8"
+            className="flex flex-col gap-y-6 w-[280px] xl:w-[514px] text-xl text-txt-grey mt-8"
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.2 }}

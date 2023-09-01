@@ -24,7 +24,7 @@ const ContactForm = ({ section, formFn }) => {
   const formStyle =
     section === "modal"
       ? "max-w-[285px] flex flex-col gap-y-6"
-      : "w-[335px] md:w-full xl:w-[896px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-4 md:gap-y-6 xl:gap-y-0 md:gap-x-4 xl:gap-x-6 rounded-[8px] border-[1px] border-bg-green border-opacity-[.4] py-4 px-6 items-end xl:ml-auto relative";
+      : "w-[280px] md:w-full xl:w-[896px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-4 md:gap-y-6 xl:gap-y-0 md:gap-x-4 xl:gap-x-6 rounded-[8px] border-[1px] border-bg-green border-opacity-[.4] py-4 px-6 items-end xl:ml-auto relative";
 
   const btnFormStyle = section !== "modal" ? "absolute top-[215px] left-0 md:static" : "";
 

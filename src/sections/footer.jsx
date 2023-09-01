@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import Button from "../components/UI/buttons";
 import Logo from "../components/UI/logo";
 import ContactList from "../components/contactList";
@@ -9,7 +8,6 @@ import { scrollTo } from "../helpers/scrollFunctions";
 import { Up } from "../icons/iconComponent";
 
 const Footer = () => {
-  const { t } = useTranslation();
   return (
     <section className="bg-bg-main bg-footer bg-no-repeat bg-cover z-10 relative">
       <div className="w-full h-20 -top-[15px] left-0 absolute gradient__footer" />
@@ -17,13 +15,12 @@ const Footer = () => {
         className="container min-h-[440px] px-5 md:px-10 xl:px-[120px] pt-32 pb-[84px] md:pb-[134px] mx-auto relative"
         id="contacts"
       >
-        <ul className="flex gap-y-2 md:gap-x-4 xl:gap-y-0 xl:gap-x-2 justify-between">
+        <ul className="flex flex-wrap xl:flex-nowrap gap-y-6 md:gap-x-4 xl:gap-y-0 xl:gap-x-2 justify-between">
           <li className="flex flex-col gap-y-10 xl:w-[240px] justify-center">
             <Logo />
             <SocialIconsList type={"footer"} />
           </li>
-          <li className="flex flex-col">
-            <p className="text-2xl mb-2">{t(`footer.0`)} </p>
+          <li className="flex flex-col xl:pt-[60px]">
             <ServiсesList />
           </li>
           <li>

@@ -7,6 +7,7 @@ import SocialIconsList from "./socialIconsList";
 import Overlay from "./UI/modal/overlay";
 import useScrollBlock from "../hooks/useScrollBlock";
 import Button from "./UI/buttons";
+import Logo from "./UI/logo";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,13 +34,13 @@ const NavMobile = () => {
                 <icons.Close />
               </Button>
               <Menu type={"mobile"} clickFn={closeModal} />
-              <img src={logo} alt="Logo" className="w-[172px] h-[88px] mt-[150px] mx-auto mb-10" />
+              <Logo />
               <SocialIconsList type="mobile" />
             </div>
           </Overlay>
         ) : (
           <div className="flex justify-between items-center p-4">
-            <img src={logo} alt="Logo" className="w-[120px] h-[60px]" />
+            <img src={logo} alt="Logo" className="w-[120px] h-[69px]" />
             <div className="flex justify-between gap-x-5">
               <LanguageBtns />
               <button

@@ -16,7 +16,7 @@ const Consultation = () => {
           {t(`title.consultation`)}
         </MTitle>
         <SubTitle subTitleClass={"max-w-[452px] uppercase mb-8"}>{t(`subtitle.consultation`)}</SubTitle>
-        <ul className="w-[335px] h-full md:w-[690px] xl:w-[866px] md:h-[234px] grid grid-cols-1 md:grid-cols-2 border-[0.5px] border-bg-green border-opacity-[.4] mb-6 xl:mb-[108px] ">
+        <ul className="w-[280px] h-full md:w-[690px] xl:w-[866px] md:h-[234px] grid grid-cols-1 md:grid-cols-2 border-[0.5px] border-bg-green border-opacity-[.4] mb-6 xl:mb-[108px] ">
           {ITEMS.map((el) => (
             <TableItem id={el.id} key={el.id} />
           ))}
@@ -25,7 +25,7 @@ const Consultation = () => {
           <img
             src="/img/girl-1.png"
             alt="girl"
-            className="hidden xl:inline w-[500px] h-[500px] absolute bottom-[102px] right-0"
+            className="hidden xl:inline w-[500px] h-[500px] absolute bottom-[76px] right-0 object-contain"
           />
           <ContactForm section="consultation" />
         </div>

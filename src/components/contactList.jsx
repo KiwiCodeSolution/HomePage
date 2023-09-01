@@ -4,7 +4,7 @@ import { hoverAnimations } from "../helpers/stylesHelpers";
 const ContactList = () => {
   const { t } = useTranslation();
   return (
-    <ul className="flex flex-wrap gap-y-5 justify-between w-[380px]">
+    <ul className="flex flex-col gap-y-1 justify-between w-[225px]">
       <li className="flex flex-col w-fit relative overflow-hidden pb-1">
         <p className="text-2xl mb-2">{t(`phone`)}</p>
         <div className="flex flex-col gap-y-[7px]">

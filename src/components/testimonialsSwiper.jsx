@@ -8,7 +8,7 @@ import SwiperNavigations from "./swiperNavigations";
 
 const TestimonialsSwiper = () => {
   return (
-    <div className="w-[335px] md:w-[432px] min-h-[430px] mt-5 md:mt-8 xl:mt-[157px] py-11 px-[70px] rounded-[8px] border-[1px] border-bg-green border-opacity-[.2] bg-bg-grey mx-auto z-10 relative">
+    <div className="w-[280px] md:w-[432px] min-h-[430px] mt-5 md:mt-8 xl:mt-[157px] py-11 px-4 md:px-[70px] rounded-[8px] border-[1px] border-bg-green border-opacity-[.2] bg-bg-grey mx-auto z-10 relative">
       <Quotes className={"absolute top-10 left-10"} />
       <TestimonialsCircleS className={"absolute top-[148px] left-3"} />
       <TestimonialsCircleM className={"absolute -top-5 -right-4"} />

@@ -237,3 +237,7 @@ ol {
 .button-prev {
   background: -webkit-linear-gradient(180deg, rgba(56, 239, 125, 1), rgba(34, 125, 148, 1));
 }
+
+.how__bg{
+  background: linear-gradient(51deg, rgba(56, 239, 125, 0.20) 0%, rgba(6, 57, 26, 0.20) 35.09%, rgba(6, 66, 81, 0.20) 50.97%, rgba(34, 125, 148, 0.20) 85.68%);
+}

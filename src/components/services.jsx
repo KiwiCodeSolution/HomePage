@@ -59,7 +59,7 @@ const ServiсesList = ({ type }) => {
           whileInView="visible"
           custom={id}
           variants={textAnimation}
-          // viewport={{ once: true }}
+          viewport={{ once: true }}
         >
           <Circle>
             <Icon className={"absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"} />
@@ -75,7 +75,7 @@ const ServiсesList = ({ type }) => {
       ))}
     </ul>
   ) : (
-    <ul className="h-full grid grid-cols-1 xl:grid-cols-2 gap-y-1 place-content-between pb-2 overflow-hidden ">
+    <ul className="min-h-[145px] grid grid-cols-1 xl:grid-cols-2 gap-y-1 place-content-between pb-2 overflow-hidden ">
       {SERVICES.map(({ id }) => (
         <li key={id} className="flex flex-col gap-y-[7px] text-xl font-medium w-fit overflow-hidden pb-1 relative ">
           <a href="#services" className={`cursor-pointer ${hoverAnimations}`}>
