@@ -30,7 +30,7 @@ const HowItWorks = () => {
                   variants={blocAnimation}
                   viewport={{ once: true }}
                 >
-                  <p className="min-h-[96px] px-3 text-2xl font-bold bg-gradient-to-b from-bg-green to-bg-blue text-txt-white rounded-tr-3xl flex justify-center items-center text-center">
+                  <p className="h-[100px] px-3 text-2xl font-bold bg-gradient-to-b from-bg-green to-bg-blue text-txt-white rounded-tr-3xl flex justify-center items-center text-center">
                     {t(`how.${el - 1}.title`)}
                   </p>
                   <div className="w-full min-h-[218px] p-5 text-base how__bg">{t(`how.${el - 1}.text`)}</div>
