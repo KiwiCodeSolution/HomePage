@@ -27,6 +27,7 @@ module.exports = {
         hero: "url('/public/img/hero.png')",
         aboutWave: "url('/public/img/about.png')",
         about: "url('/public/img/girl.png')",
+        principles: "url('/public/img/principles_bg.png')",
         modal: "url('/public/img/modal.png')",
         modalGirl: "url('/public/img/girl-modal.png')",
         testimonials: "url('/public/img/testimorials.png')",

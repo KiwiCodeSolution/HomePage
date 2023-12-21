@@ -25,7 +25,7 @@ const Consultation = () => {
           <img
             src="/img/girl-1.png"
             alt="girl"
-            className="hidden xl:inline w-[500px] h-[500px] absolute bottom-[76px] right-0 object-contain"
+            className="hidden xl:inline w-[358px] h-auto absolute bottom-[0] right-[104px] object-contain"
           />
           <ContactForm section="consultation" />
         </div>

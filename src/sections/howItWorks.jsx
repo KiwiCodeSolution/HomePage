@@ -39,8 +39,8 @@ const HowItWorks = () => {
             </ul>
             {/* circles */}
 
-            <div className="hidden xl:inline-block absolute -top-[200px] -left-[225px] w-[430px] h-[430px] bg-bg-green rounded-full opacity-20 blur-[100px]" />
-            <div className="hidden xl:inline-block absolute -top-[150px] -right-[180px] w-[530px] h-[530px] bg-bg-green rounded-full opacity-20 blur-[100px] -z-20" />
+            {/* <div className="hidden xl:inline-block absolute -top-[200px] -left-[225px] w-[430px] h-[430px] bg-bg-green rounded-full opacity-20 blur-[100px]" />
+            <div className="hidden xl:inline-block absolute -top-[150px] -right-[180px] w-[530px] h-[530px] bg-bg-green rounded-full opacity-20 blur-[100px] -z-20" /> */}
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import HowItWorks from "./sections/howItWorks";
 // import Portfolio from "./sections/portfolio";
 
 import Testimonials from "./sections/testimonials";
+import Principles from "./sections/principles";
 
 function App() {
   const { i18n } = useTranslation();
@@ -28,6 +29,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Principles />
       <HowItWorks />
 
       <Consultation />

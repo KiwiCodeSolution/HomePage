@@ -64,7 +64,7 @@ const ServiсesList = ({ type }) => {
           <Circle>
             <Icon className={"absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"} />
           </Circle>
-          <icons.Line />
+          <icons.Line opacity={0.1} />
           <div className="flex flex-col justify-between h-full">
             <p className="mt-1 mb-2 text-2xl font-medium leading-[1.4]">{t(`services.${id - 1}.title`)}</p>
             <p className="text-base leading-[1.4] opacity-[0.6] text-justify xl:text-left">

@@ -170,6 +170,18 @@ ol {
   border: 10px solid transparent;
 }
 
+.circle_pinciples {
+  background: linear-gradient(#050505, #050505) padding-box, linear-gradient(180deg, #38ef7d, #227d94) border-box;
+  border-radius: 50%;
+  border: 4px solid transparent;
+}
+
+.principles_card {
+  border-radius: 16px 16px 0px 0px;
+  border: 1px solid #227d94;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
 .gradient {
   background: linear-gradient(0deg, rgb(5, 5, 5), rgba(5, 5, 5, 0));
 }
@@ -238,6 +250,12 @@ ol {
   background: -webkit-linear-gradient(180deg, rgba(56, 239, 125, 1), rgba(34, 125, 148, 1));
 }
 
-.how__bg{
-  background: linear-gradient(51deg, rgba(56, 239, 125, 0.20) 0%, rgba(6, 57, 26, 0.20) 35.09%, rgba(6, 66, 81, 0.20) 50.97%, rgba(34, 125, 148, 0.20) 85.68%);
+.how__bg {
+  background: linear-gradient(
+    51deg,
+    rgba(56, 239, 125, 0.2) 0%,
+    rgba(6, 57, 26, 0.2) 35.09%,
+    rgba(6, 66, 81, 0.2) 50.97%,
+    rgba(34, 125, 148, 0.2) 85.68%
+  );
 }

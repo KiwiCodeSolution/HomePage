@@ -612,9 +612,9 @@ export const Software = ({ className }) => (
   </svg>
 );
 
-export const Line = () => (
+export const Line = ({ opacity }) => (
   <svg width="133" height="1" viewBox="0 0 133 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line opacity="0.1" y1="0.5" x2="133" y2="0.5" stroke="white" />
+    <line opacity={opacity} y1="0.5" x2="133" y2="0.5" stroke="white" />
   </svg>
 );
 
@@ -765,5 +765,196 @@ export const Up = ({ className }) => (
 export const NextStep = ({ className }) => (
   <svg width="140" height="90" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
     <path d="M31 16l-15-15v9h-16v12h16v9z" stroke="#38EF7D" />
+  </svg>
+);
+
+export const Expertise = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 43 36"
+    fill="none"
+    className={`${className} w-[36px] h-[30px] xl:w-[43px] xl:h-[36px]`}
+  >
+    <path
+      d="M12.7143 7.10256V4C12.7143 2.34314 14.0574 1 15.7143 1H27.2857C28.9426 1 30.2857 2.34315 30.2857 4V7.10256M30.2857 7.10256H4C2.34315 7.10256 1 8.44571 1 10.1026V22.3579C1 23.1906 1.3551 23.9838 1.97619 24.5385V24.5385M30.2857 7.10256H39C40.6569 7.10256 42 8.44571 42 10.1026V22.3579C42 23.1906 41.6449 23.9838 41.0238 24.5385V24.5385M1.97619 24.5385V32C1.97619 33.6569 3.31934 35 4.97619 35H38.0238C39.6807 35 41.0238 33.6569 41.0238 32V24.5385M1.97619 24.5385L16.6191 24.4874M41.0238 24.5385L26.3809 24.4874M16.6191 24.4874V27.5256C16.6191 27.8018 16.8429 28.0256 17.1191 28.0256H25.8809C26.1571 28.0256 26.3809 27.8018 26.3809 27.5256V24.4874M16.6191 24.4874H26.3809"
+      stroke="url(#paint0_linear_2337_9597)"
+      strokeWidth="2"
+    />
+    <defs>
+      <linearGradient id="paint0_linear_2337_9597" x1="21.5" y1="1" x2="21.5" y2="35" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const Approach = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    fill="none"
+    className={`${className} w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]`}
+  >
+    <path
+      d="M36.28 43.2395C34.52 43.7595 32.44 43.9995 30 43.9995H18C15.56 43.9995 13.48 43.7595 11.72 43.2395C12.16 38.0395 17.5 33.9395 24 33.9395C30.5 33.9395 35.84 38.0395 36.28 43.2395Z"
+      stroke="url(#paint0_linear_2338_9673)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M30 4H18C8 4 4 8 4 18V30C4 37.56 6.28 41.7 11.72 43.24C12.16 38.04 17.5 33.9399 24 33.9399C30.5 33.9399 35.84 38.04 36.28 43.24C41.72 41.7 44 37.56 44 30V18C44 8 40 4 30 4ZM24 28.34C20.04 28.34 16.84 25.12 16.84 21.16C16.84 17.2 20.04 14 24 14C27.96 14 31.16 17.2 31.16 21.16C31.16 25.12 27.96 28.34 24 28.34Z"
+      stroke="url(#paint1_linear_2338_9673)"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M31.16 21.16C31.16 25.12 27.96 28.34 24 28.34C20.04 28.34 16.84 25.12 16.84 21.16C16.84 17.2 20.04 14 24 14C27.96 14 31.16 17.2 31.16 21.16Z"
+      stroke="url(#paint2_linear_2338_9673)"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_2338_9673"
+        x1="24"
+        y1="33.9395"
+        x2="24"
+        y2="43.9995"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient id="paint1_linear_2338_9673" x1="24" y1="4" x2="24" y2="43.24" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient id="paint2_linear_2338_9673" x1="24" y1="14" x2="24" y2="28.34" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const Watch = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    fill="none"
+    className={`${className} w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]`}
+  >
+    <path
+      d="M44 24C44 35.04 35.04 44 24 44C12.96 44 4 35.04 4 24C4 12.96 12.96 4 24 4C35.04 4 44 12.96 44 24Z"
+      stroke="url(#paint0_linear_2338_9692)"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M31.42 30.3595L25.22 26.6595C24.14 26.0195 23.26 24.4795 23.26 23.2195V15.0195"
+      stroke="url(#paint1_linear_2338_9692)"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <defs>
+      <linearGradient id="paint0_linear_2338_9692" x1="24" y1="4" x2="24" y2="44" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_2338_9692"
+        x1="27.34"
+        y1="15.0195"
+        x2="27.34"
+        y2="30.3595"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const Partnership = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    fill="none"
+    className={`${className} w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]`}
+  >
+    <path
+      d="M18.32 21.74C18.12 21.72 17.88 21.72 17.66 21.74C12.9 21.58 9.12 17.68 9.12 12.88C9.12 7.98 13.08 4 18 4C22.9 4 26.88 7.98 26.88 12.88C26.86 17.68 23.08 21.58 18.32 21.74Z"
+      stroke="url(#paint0_linear_2338_9808)"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M32.8201 8C36.7001 8 39.8201 11.14 39.8201 15C39.8201 18.78 36.8201 21.86 33.0801 22C32.9201 21.98 32.7401 21.98 32.5601 22"
+      stroke="url(#paint1_linear_2338_9808)"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M8.31994 29.12C3.47994 32.36 3.47994 37.64 8.31994 40.86C13.8199 44.54 22.8399 44.54 28.3399 40.86C33.1799 37.62 33.1799 32.34 28.3399 29.12C22.8599 25.46 13.8399 25.46 8.31994 29.12Z"
+      stroke="url(#paint2_linear_2338_9808)"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M36.6801 40C38.1201 39.7 39.4801 39.12 40.6001 38.26C43.7201 35.92 43.7201 32.06 40.6001 29.72C39.5001 28.88 38.1601 28.32 36.7401 28"
+      stroke="url(#paint3_linear_2338_9808)"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <defs>
+      <linearGradient id="paint0_linear_2338_9808" x1="18" y1="4" x2="18" y2="21.74" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_2338_9808"
+        x1="36.1901"
+        y1="8"
+        x2="36.1901"
+        y2="22"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint2_linear_2338_9808"
+        x1="18.3299"
+        y1="26.375"
+        x2="18.3299"
+        y2="43.62"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+      <linearGradient
+        id="paint3_linear_2338_9808"
+        x1="39.8101"
+        y1="28"
+        x2="39.8101"
+        y2="40"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#38EF7D" />
+        <stop offset="1" stopColor="#227D94" />
+      </linearGradient>
+    </defs>
   </svg>
 );
