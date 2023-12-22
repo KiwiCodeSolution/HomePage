@@ -5,7 +5,7 @@ import ContactForm from "../components/contactForm";
 import TableItem from "../components/tableItem";
 import { titleAnimation } from "../helpers/stylesHelpers";
 
-const ITEMS = [{ id: "1" }, { id: "2" }, { id: "3" }, { id: "4" }];
+const ITEMS = [1, 2, 3, 4];
 
 const Consultation = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const Consultation = () => {
         <SubTitle subTitleClass={"max-w-[452px] uppercase mb-8"}>{t(`subtitle.consultation`)}</SubTitle>
         <ul className="w-[280px] h-full md:w-[690px] xl:w-[866px] md:h-[234px] grid grid-cols-1 md:grid-cols-2 border-[0.5px] border-bg-green border-opacity-[.4] mb-6 xl:mb-[108px] ">
           {ITEMS.map((el) => (
-            <TableItem id={el.id} key={el.id} />
+            <TableItem id={el} key={el} />
           ))}
         </ul>
         <div className="w-full relative">

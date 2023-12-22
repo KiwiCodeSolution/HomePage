@@ -54,11 +54,9 @@ const PrinciplesList = () => {
           </Circle>
 
           <div className="flex flex-col h-full px-5 gap-y-5 ">
-            <h4 className="text-[22px] font-bold leading-[1.4]">{t(`pinciples.${id - 1}.title`)}</h4>
-            <icons.Line opacity={0.2} />
-            <p className="text-base leading-[1.4] text-justify xl:text-left text-txt-grey">
-              {t(`pinciples.${id - 1}.text`)}
-            </p>
+            <h4 className="text-[22px] font-bold leading-[1.4] text-center">{t(`pinciples.${id - 1}.title`)}</h4>
+            <icons.Line opacity={0.2} className={"mx-auto"} />
+            <p className="text-base leading-[1.4] text-txt-grey text-center">{t(`pinciples.${id - 1}.text`)}</p>
           </div>
         </motion.li>
       ))}

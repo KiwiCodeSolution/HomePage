@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { MTitle } from "../components/UI/title";
 import { blocAnimation, titleAnimation } from "../helpers/stylesHelpers";
-
-const STEPS = [1, 2, 3, 4];
+import AsNavFor from "./slider";
 
 const HowItWorks = () => {
   const { t } = useTranslation();
@@ -17,26 +16,7 @@ const HowItWorks = () => {
               {t(`title.how`)}
             </MTitle>
 
-            <ul className="flex gap-x-6 flex-wrap mt-[40px] md:px-10 w-full">
-              {STEPS.map((el) => (
-                <motion.li
-                  className={`w-full md:w-[270px] min-h-[322px] mb-5 xl:mb-0 xl:${
-                    el === 2 || el === 4 ? "mt-[60px]" : "mt-0"
-                  } relative rounded-b-lg`}
-                  key={el}
-                  initial="hidden"
-                  whileInView="visible"
-                  custom={el * 2}
-                  variants={blocAnimation}
-                  viewport={{ once: true }}
-                >
-                  <p className="h-[100px] px-3 text-2xl font-bold bg-gradient-to-b from-bg-green to-bg-blue text-txt-white rounded-tr-3xl flex justify-center items-center text-center">
-                    {t(`how.${el - 1}.title`)}
-                  </p>
-                  <div className="w-full min-h-[218px] p-5 text-base how__bg">{t(`how.${el - 1}.text`)}</div>
-                </motion.li>
-              ))}
-            </ul>
+            <AsNavFor />
             {/* circles */}
 
             {/* <div className="hidden xl:inline-block absolute -top-[200px] -left-[225px] w-[430px] h-[430px] bg-bg-green rounded-full opacity-20 blur-[100px]" />

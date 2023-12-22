@@ -17,6 +17,8 @@
     "react-i18next": "^13.1.2",
     "react-just-parallax": "^3.1.16",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "swiper": "^10.1.0",
     "web-vitals": "^2.1.4"
   },
