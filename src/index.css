@@ -179,7 +179,15 @@ ol {
 .principles_card {
   border-radius: 16px 16px 0px 0px;
   border: 1px solid #227d94;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+
+  background: linear-gradient(
+      51deg,
+      rgba(56, 239, 125, 0.1) 0%,
+      rgba(6, 57, 26, 0.1) 35.09%,
+      rgba(6, 66, 81, 0.1) 50.97%,
+      rgba(34, 125, 148, 0.1) 85.68%
+    ),
+    rgba(0, 0, 0, 0.7);
 }
 
 .gradient {
@@ -198,6 +206,10 @@ ol {
 }
 
 .numbers__title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.3;
   background: linear-gradient(180deg, #38ef7d 0%, #227d94 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -258,4 +270,25 @@ ol {
     rgba(6, 66, 81, 0.2) 50.97%,
     rgba(34, 125, 148, 0.2) 85.68%
   );
+}
+
+.slick-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-current .slick-item {
+  background: linear-gradient(#050505, #050505) padding-box,
+    linear-gradient(180deg, #38ef7d 0%, #227d94 100%) border-box;
+
+  border: 1px solid transparent;
+
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+
+.slick-current .numbers__title {
+  opacity: 1;
 }

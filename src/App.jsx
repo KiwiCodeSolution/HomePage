@@ -6,7 +6,7 @@ import Consultation from "./sections/consultation";
 import Footer from "./sections/footer";
 import Header from "./sections/header";
 import Hero from "./sections/hero";
-import HowItWorks from "./sections/howItWorks";
+import HowWeWorks from "./sections/howWeWorks";
 // import Portfolio from "./sections/portfolio";
 
 import Testimonials from "./sections/testimonials";
@@ -30,7 +30,7 @@ function App() {
       <Hero />
       <About />
       <Principles />
-      <HowItWorks />
+      <HowWeWorks />
 
       <Consultation />
       <Testimonials />

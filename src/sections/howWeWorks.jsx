@@ -1,18 +1,17 @@
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { MTitle } from "../components/UI/title";
-import { blocAnimation, titleAnimation } from "../helpers/stylesHelpers";
+import { titleAnimation } from "../helpers/stylesHelpers";
 import AsNavFor from "./slider";
 
-const HowItWorks = () => {
+const HowWeWorks = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-bg-main z-10">
+    <section className="bg-bg-main z-10 how">
       <div className="container mx-auto px-5 md:px-10 xl:px-[120px] relative h-full pb-7 xl:pb-[60px]">
         <div className="grid grid-cols-1">
           <div className="flex flex-col relative order-2 md:order-1">
-            <MTitle variants={titleAnimation} initial="hidden" whileInView="visible">
+            <MTitle variants={titleAnimation} initial="hidden" whileInView="visible" titleClass={"mb-8"}>
               {t(`title.how`)}
             </MTitle>
 
@@ -28,4 +27,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default HowWeWorks;

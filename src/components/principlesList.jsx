@@ -37,12 +37,12 @@ const PrinciplesList = () => {
   return (
     <ul
       className="grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-4 xl:gap-y-0 xl:grid-cols-4 md:gap-x-4 xl:gap-x-6 justify-between mb-[60px] xl:mt-[56px] xl:mb-[76px] relative"
-      id="зrinciples"
+      id="principles"
     >
       {PRINCIPLES.map(({ id, Icon }) => (
         <motion.li
           key={id}
-          className={`flex flex-col w-[306px] h-[422px] py-4 px-[5px] gap-y-5 principles_card`}
+          className={`flex flex-col w-[306px] h-[422px] py-4 px-[5px] gap-y-5 principles_card z-10`}
           initial="hidden"
           whileInView="visible"
           custom={id}
