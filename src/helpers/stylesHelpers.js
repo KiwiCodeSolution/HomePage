@@ -25,3 +25,6 @@ export const blocAnimation = {
   },
   visible: (custom) => ({ scale: 1, opacity: 1, transition: { delay: custom * 0.3, duration: 0.3 } }),
 };
+
+export const basicStyles =
+  "w-[52px] h-[52px] p-4 bg-white hover:shadow-swiper z-[1] text-xl md:text-lg xl:text-xl font-bold leading-[1.6] bg-gradient-to-b from-bg-green to-bg-blue py-3 text-white rounded-full absolute -top-[73px]";

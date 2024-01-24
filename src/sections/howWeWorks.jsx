@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { MTitle } from "../components/UI/title";
 import { titleAnimation } from "../helpers/stylesHelpers";
-import AsNavFor from "./slider";
+import SliderHowWeWorks from "./slider";
 
 const HowWeWorks = () => {
   const { t } = useTranslation();
@@ -15,7 +15,7 @@ const HowWeWorks = () => {
               {t(`title.how`)}
             </MTitle>
 
-            <AsNavFor />
+            <SliderHowWeWorks />
             {/* circles */}
 
             {/* <div className="hidden xl:inline-block absolute -top-[200px] -left-[225px] w-[430px] h-[430px] bg-bg-green rounded-full opacity-20 blur-[100px]" />
