@@ -1,32 +1,38 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { Translation } from "react-i18next";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { Right, Left } from "../icons/iconComponent";
-import { basicStyles } from "../helpers/stylesHelpers";
+import { basicStylesSwiperButton } from "../helpers/stylesHelpers";
+import HowWeWorksItem from "./howWeWorksItem";
 
 const ITEMS = [
   {
     id: "1",
     photo: "/img/how-works-1.png",
+    alt: "this image illustrates the first stage of work",
   },
   {
     id: "2",
     photo: "/img/how-works-2.png",
+    alt: "this image illustrates the second stage of work",
   },
   {
     id: "3",
     photo: "/img/how-works-3.png",
+    alt: "this image illustrates the third stage of work",
   },
   {
     id: "4",
     photo: "/img/how-works-4.png",
+    alt: "this image illustrates the fourth stage of work",
   },
   {
     id: "5",
     photo: "/img/how-works-5.png",
+    alt: "this image illustrates the fifth stage of work",
   },
 ];
 
@@ -34,7 +40,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`-left-[78px] ${basicStyles}`}
+      className={`top-0 -left-[78px] ${basicStylesSwiperButton}`}
       style={{ ...style, display: "flex", alignItems: "center" }}
       onClick={onClick}
     >
@@ -47,7 +53,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`left-[380px] ${basicStyles}`}
+      className={`top-0 left-[380px] ${basicStylesSwiperButton}`}
       style={{ ...style, display: "flex", alignItems: "center" }}
       onClick={onClick}
     >
@@ -78,7 +84,7 @@ export default class SliderHowWeWorks extends Component {
       prevArrow: <SamplePrevArrow />,
     };
     return (
-      <div className="relative  h-[471px]">
+      <div className="relative">
         {/* це слайдер із номерами  */}
         <Slider
           asNavFor={this.state.nav1}
@@ -86,9 +92,9 @@ export default class SliderHowWeWorks extends Component {
           slidesToShow={5}
           swipeToSlide={true}
           focusOnSelect={true}
-          // autoplay={true}
+          autoplay={true}
           infinite={true}
-          className="w-[356px] ml-[76px] mb-5 absolute top-0"
+          className="w-[356px] ml-[76px] absolute top-[55px]"
         >
           {ITEMS.map((el) => (
             <div key={el.id + 10}>
@@ -107,22 +113,7 @@ export default class SliderHowWeWorks extends Component {
           className="w-full ml-[76px]"
         >
           {ITEMS.map((el) => (
-            <div key={el.id} className="relative overflow-visible">
-              <Translation>
-                {(t) => <h1 className="numbers__title text-[32px] mb-2 w-[356px]">{t(`how.${el.id - 1}.title`)}</h1>}
-              </Translation>
-
-              <Translation>
-                {(t) => (
-                  <p className="text-base text-white opacity-80 leading-relaxed w-[356px]">
-                    {t(`how.${el.id - 1}.text`)}
-                  </p>
-                )}
-              </Translation>
-              <div className="w-[605px] h-[471px] absolute -top-[20px] left-[20px]">
-                <img src={el.photo} alt="" />
-              </div>
-            </div>
+            <HowWeWorksItem item={el} key={el.id} />
           ))}
         </Slider>
       </div>

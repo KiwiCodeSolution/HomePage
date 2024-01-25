@@ -44,6 +44,7 @@ module.exports = {
         info: "0px 4px 40px 0px rgba(38,43,189,0.60);",
         alert: "0px 4px 40px 0px rgba(235,110,56,0.60);",
         success: "0px 4px 40px 0px rgba(56,239,125,0.60);",
+        swiperCard: "0px 0px 10px 10px rgba(43,209,195,0.6)",
       },
       gridTemplateColumns: {},
       keyframes: {

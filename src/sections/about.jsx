@@ -21,7 +21,7 @@ const About = () => {
   };
 
   return (
-    <section className="bg-bg-main bg-aboutWave bg-no-repeat bg-[center_top_-8rem] z-10">
+    <section className="bg-bg-main bg-aboutWave bg-no-repeat bg-cover bg-[center_top_-8rem] z-10">
       <div className="container mx-auto px-5 md:px-10 xl:px-[120px] pb-12 md:pb-[64px] relative h-full" id="about">
         <div className="w-full h-20 -top-[75px] left-0 absolute gradient" />
         <ServiсesList type={"about"} />

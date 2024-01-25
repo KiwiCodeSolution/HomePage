@@ -292,3 +292,34 @@ ol {
 .slick-current .numbers__title {
   opacity: 1;
 }
+/* 
+.portfolio .slick-dots {
+  height: fit-content;
+  background-color: #939393;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio .slick-dots li,
+.portfolio .slick-dots li button,
+.portfolio .slick-dots li.slick-active button:before,
+.portfolio .slick-dots li button:before {
+  width: 8px;
+  height: 8px;
+}
+
+.portfolio .slick-dots li button {
+  padding: 0;
+  border-radius: 50%;
+  background-color: #227d94;
+}
+.portfolio .slick-dots li button:before {
+  content: "";
+}
+
+.portfolio .slick-dots li.slick-active button:before {
+  content: "";
+  border-radius: 50%;
+  background-color: #38ef7d;
+  padding: 0;
+} */

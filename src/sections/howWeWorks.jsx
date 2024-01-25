@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { MTitle } from "../components/UI/title";
 import { titleAnimation } from "../helpers/stylesHelpers";
-import SliderHowWeWorks from "./slider";
+import SliderHowWeWorks from "../components/sliderHowWeWorks";
 
 const HowWeWorks = () => {
   const { t } = useTranslation();
