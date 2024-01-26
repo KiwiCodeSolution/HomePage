@@ -45,6 +45,7 @@ module.exports = {
         alert: "0px 4px 40px 0px rgba(235,110,56,0.60);",
         success: "0px 4px 40px 0px rgba(56,239,125,0.60);",
         swiperCard: "0px 0px 10px 10px rgba(43,209,195,0.6)",
+        portfolioCategory: "0px 0px 10px 0px rgba(34,125,148,0.40);",
       },
       gridTemplateColumns: {},
       keyframes: {

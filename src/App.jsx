@@ -25,15 +25,15 @@ function App() {
 
   return (
     <div className={`bg-bg-main text-txt-white ${currenFont} flex flex-col min-h-[100vh] relative`}>
-      {/* <SocialIconsList type="allSite" /> */}
-      {/* <Header /> */}
-      {/* <Hero /> */}
-      {/* <About /> */}
-      {/* <Principles /> */}
-      {/* <HowWeWorks /> */}
+      <SocialIconsList type="allSite" />
+      <Header />
+      <Hero />
+      <About />
+      <Principles />
+      <HowWeWorks />
       <Portfolio />
-      {/* <Consultation /> */}
-      {/* <Testimonials /> */}
+      <Consultation />
+      <Testimonials />
       <Footer />
     </div>
   );

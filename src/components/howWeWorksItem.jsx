@@ -27,7 +27,7 @@ const HowWeWorksItem = ({ item }) => {
 
 HowWeWorksItem.propTypes = {
   item: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     photo: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
   }),

@@ -1,10 +1,30 @@
 import PropTypes from "prop-types";
+// import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Button from "./UI/buttons";
+import { Right } from "../icons/iconComponent";
+import useScrollBlock from "../hooks/useScrollBlock";
+import Overlay from "./UI/modal/overlay";
+import PortfolioDetailInfoCard from "./UI/modal/portfolioDetailInfoCard";
 
-const PortfolioCard = ({ element }) => {
-  const [activeId, setAxpandedId] = useState("1");
-  console.log(activeId);
+const PortfolioCard = ({ element, onOpenModal, onCloseModal }) => {
+  // const { t } = useTranslation();
+  const [activeId, setAxpandedId] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [blockScroll, allowScroll] = useScrollBlock();
+
+  function openModal() {
+    onOpenModal();
+    blockScroll();
+    setIsOpen(true);
+  }
+
+  function closeModal(e) {
+    onCloseModal();
+    allowScroll();
+    setIsOpen(false);
+  }
 
   const textAnimation = {
     hidden: {
@@ -27,7 +47,7 @@ const PortfolioCard = ({ element }) => {
         onMouseLeave={() => setAxpandedId(null)}
       >
         <img
-          src={element.urlImage}
+          src={element.image}
           alt={element.alt}
           className="w-full h-[368px] rounded-3xl object-center object-cover"
         />
@@ -43,8 +63,21 @@ const PortfolioCard = ({ element }) => {
             rerum!
           </p>
         </motion.div>
-        <button className="rounded-full absolute bottom-5 right-5 w-8 h-8 bg-red-700 z-10">cklik me</button>
+        <Button
+          btnStyle="roundBtn"
+          btnClass="absolute bottom-5 right-5 z-10"
+          clickFn={openModal}
+          aria={"open pop-up button"}
+        >
+          <Right className={"-rotate-45"} />
+        </Button>
       </motion.div>
+
+      {isOpen && (
+        <Overlay clickFn={closeModal}>
+          <PortfolioDetailInfoCard clickFn={closeModal} element={element} />
+        </Overlay>
+      )}
     </div>
   );
 };

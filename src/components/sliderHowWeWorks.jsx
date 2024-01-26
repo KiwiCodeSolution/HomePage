@@ -37,7 +37,7 @@ const ITEMS = [
 ];
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       className={`top-0 -left-[78px] ${basicStylesSwiperButton}`}
@@ -50,7 +50,7 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       className={`top-0 left-[380px] ${basicStylesSwiperButton}`}
@@ -94,7 +94,7 @@ export default class SliderHowWeWorks extends Component {
           focusOnSelect={true}
           autoplay={true}
           infinite={true}
-          className="w-[356px] ml-[76px] absolute top-[55px]"
+          className="w-[356px] ml-[76px]"
         >
           {ITEMS.map((el) => (
             <div key={el.id + 10}>
@@ -110,7 +110,7 @@ export default class SliderHowWeWorks extends Component {
           asNavFor={this.state.nav2}
           ref={(slider) => (this.slider1 = slider)}
           {...settings}
-          className="w-full ml-[76px]"
+          className="w-[100% - 76px] ml-[76px] mt-[-55px]"
         >
           {ITEMS.map((el) => (
             <HowWeWorksItem item={el} key={el.id} />

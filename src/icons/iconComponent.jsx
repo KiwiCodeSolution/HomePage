@@ -632,14 +632,14 @@ export const Left = () => (
   </svg>
 );
 
-export const Right = () => (
+export const Right = ({ className }) => (
   <svg
     width="20"
     height="20"
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="w-[18px] h-[18px] xl:w-[20px] xl:h-[20px]"
+    className={`w-[18px] h-[18px] xl:w-[20px] xl:h-[20px] ${className}`}
   >
     <path d="M11 4.99998C11 4.99998 14.0474 8.04737 16 9.99999L11 15" stroke="white" strokeWidth="1.8" />
     <path d="M16 10H4" stroke="white" strokeWidth="1.8" />
@@ -956,5 +956,37 @@ export const Partnership = ({ className }) => (
         <stop offset="1" stopColor="#227D94" />
       </linearGradient>
     </defs>
+  </svg>
+);
+
+export const Link = () => (
+  <svg
+    width="20px"
+    height="20px"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="#ffffff"
+    transform="matrix(1, 0, 0, 1, 0, 0)"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+
+    <g id="SVGRepo_iconCarrier">
+      <path
+        d="M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626"
+        stroke="#ffffff"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        opacity="0.5"
+        d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373"
+        stroke="#ffffff"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </g>
   </svg>
 );

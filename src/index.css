@@ -292,10 +292,14 @@ ol {
 .slick-current .numbers__title {
   opacity: 1;
 }
-/* 
+
 .portfolio .slick-dots {
+  position: absolute;
+  top: -48px;
+  right: 18px;
   height: fit-content;
-  background-color: #939393;
+  width: 15%;
+  /* background-color: #939393; */
   display: flex;
   align-items: center;
 }
@@ -311,7 +315,7 @@ ol {
 .portfolio .slick-dots li button {
   padding: 0;
   border-radius: 50%;
-  background-color: #227d94;
+  background-color: #939393;
 }
 .portfolio .slick-dots li button:before {
   content: "";
@@ -322,4 +326,9 @@ ol {
   border-radius: 50%;
   background-color: #38ef7d;
   padding: 0;
-} */
+}
+
+.portfolio-link:hover svg,
+.portfolio-link:hover svg path {
+  stroke: #227d94;
+}

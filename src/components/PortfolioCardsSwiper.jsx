@@ -6,20 +6,7 @@ import { basicStylesSwiperButton } from "../helpers/stylesHelpers";
 import { Right, Left } from "../icons/iconComponent";
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={`-top-[58px] right-[173px] ${basicStylesSwiperButton}`}
-      style={{ ...style, display: "flex", alignItems: "center" }}
-      onClick={onClick}
-    >
-      <Left />
-    </div>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       className={`-top-[58px] right-[5px] ${basicStylesSwiperButton}`}
@@ -31,40 +18,34 @@ function SamplePrevArrow(props) {
   );
 }
 
-class NavigationComponent extends React.Component {
-  render() {
-    const { currentSlide, slideCount, goTo, next, previous } = this.props;
-
-    return (
-      <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "10px",
-          }}
-        >
-          {Array.from({ length: slideCount }).map((_, i) => (
-            <div
-              key={i}
-              onClick={() => goTo(i)}
-              style={{
-                width: "10px",
-                height: "10px",
-                borderRadius: "50%",
-                background: i === currentSlide ? "blue" : "#ddd",
-                margin: "0 5px",
-                cursor: "pointer",
-              }}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
+function SamplePrevArrow(props) {
+  const { style, onClick } = props;
+  return (
+    <div
+      className={`-top-[58px] right-[173px] ${basicStylesSwiperButton}`}
+      style={{ ...style, display: "flex", alignItems: "center" }}
+      onClick={onClick}
+    >
+      <Left />
+    </div>
+  );
 }
 
 export default class PortfolioCardsSwiper extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isModalOpen: false,
+    };
+
+    this.sliderRef = React.createRef(); // Створіть посилання на компонент слайдера
+  }
+
+  setModalState = (state) => {
+    this.setState({ isModalOpen: state });
+  };
+
   render() {
     const settings = {
       className: "center",
@@ -73,37 +54,24 @@ export default class PortfolioCardsSwiper extends Component {
       slidesToShow: 3,
       speed: 500,
       rows: 2,
+      autoplay: true,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
-      appendDots: (dots) => (
-        <div
-          style={{
-            backgroundColor: "#ddd",
-            borderRadius: "10px",
-            padding: "10px",
-          }}
-        >
-          <ul style={{ margin: "0px" }}> {dots} </ul>
-        </div>
-      ),
-      customPaging: (i) => (
-        <div
-          style={{
-            width: "30px",
-            color: "blue",
-            border: "1px blue solid",
-          }}
-        >
-          {i + 1}
-        </div>
-      ),
     };
+
     return (
-      <Slider {...settings}>
-        {items.map((el) => (
-          <PortfolioCard element={el} key={el.id} />
-        ))}
-      </Slider>
+      <div>
+        <Slider ref={this.sliderRef} {...settings} className="z-0" swipe={!this.state.isModalOpen}>
+          {items.map((el) => (
+            <PortfolioCard
+              element={el}
+              key={el.id}
+              onOpenModal={() => this.setModalState(true)}
+              onCloseModal={() => this.setModalState(false)}
+            />
+          ))}
+        </Slider>
+      </div>
     );
   }
 }
