@@ -9,29 +9,29 @@ import { hoverAnimations } from "../helpers/stylesHelpers";
 const SERVICES = [
   {
     id: "1",
-    Icon: icons.Consultations,
-  },
-  {
-    id: "2",
     Icon: icons.Software,
   },
   {
-    id: "3",
+    id: "2",
     Icon: icons.Design,
   },
   {
-    id: "4",
+    id: "3",
     Icon: icons.Application,
   },
-
   {
-    id: "5",
+    id: "4",
     Icon: icons.Marketing,
   },
 
   {
-    id: "6",
+    id: "5",
     Icon: icons.Forecasting,
+  },
+
+  {
+    id: "6",
+    Icon: icons.Consultations,
   },
 ];
 
@@ -75,9 +75,9 @@ const ServiсesList = ({ type }) => {
       ))}
     </ul>
   ) : (
-    <ul className="min-h-[145px] grid grid-cols-1 xl:grid-cols-2 gap-y-1 place-content-between pb-2 overflow-hidden ">
+    <ul className="min-h-[145px] w-max grid grid-cols-1 xl:grid-cols-2 gap-y-1 gap-x-8 pb-2 overflow-hidden">
       {SERVICES.map(({ id }) => (
-        <li key={id} className="flex flex-col gap-y-[7px] text-xl font-medium w-fit overflow-hidden pb-1 relative ">
+        <li key={id} className="flex flex-col gap-y-2 text-lg w-fit overflow-hidden pb-1 relative">
           <a href="#services" className={`cursor-pointer ${hoverAnimations}`}>
             {t(`services.${id - 1}.title`)}
           </a>

@@ -10,30 +10,28 @@
   ],
   "services": [
     {
-      "title": "Business consultations",
-      "text": "If you have an idea and don't know how to implement it - we are waiting for your message. Sign up for a free consultation and get planning for the development of your business in digital and beyond. We will help you and make a project."
-    },
-    {
       "title": "Software development",
       "text": "Our team of professionals develops unique software solutions that meet your needs and contribute to the development of your business. We develop full-cycle software products for the realization of your business goals."
     },
-    {
-      "title": "UI / UX Design",
-      "text": "The process of developing UI/UX design for websites includes analyzing the target audience and their needs, creating ideas and design concepts, developing prototypes and testing them for user experience, as well as  defining the color palette, fonts, and other design elements."
-    },
-
-    {
-      "title": "Desktop Application Development",
-      "text": "Desktop application development is the process of creating software to run on personal computers, which are installed and executed without internet access, and can have various functionalities ranging from processing text and tables to advanced graphical capabilities and use of databases."
-    },
-
     {
       "title": "Marketing",
       "text": "We provide the widest range of marketing tools to grow your business. From social media marketing to a complete, comprehensive marketing strategy with a big budget. At the consultation, we will tell you what needs to be improved and how we can help you become better in business."
     },
     {
+      "title": "UI / UX Design",
+      "text": "The process of developing UI/UX design for websites includes analyzing the target audience and their needs, creating ideas and design concepts, developing prototypes and testing them for user experience, as well as  defining the color palette, fonts, and other design elements."
+    },
+    {
       "title": "Business forecasting",
       "text": "Our team of experts will thoroughly analyze your data, identify patterns and trends, based on which you can build accurate forecasts of future events. We will provide you with detailed market research, competitor analysis and consumer trends to help you adapt to changes in the environment."
+    },
+    {
+      "title": "Desktop Application Development",
+      "text": "Desktop application development is the process of creating software to run on personal computers, which are installed and executed without internet access, and can have various functionalities ranging from processing text and tables to advanced graphical capabilities and use of databases."
+    },
+    {
+      "title": "Business consultations",
+      "text": "If you have an idea and don't know how to implement it - we are waiting for your message. Sign up for a free consultation and get planning for the development of your business in digital and beyond. We will help you and make a project."
     }
   ],
   "buttons": ["Get started", "Contact us"],
@@ -143,5 +141,112 @@
       "text": "5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
     }
   ],
-  "footer": ["Services:"]
+  "footer": ["Services", "Contacts"],
+  "portfolio": [
+    {
+      "cardDescription": "1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo, rerum!",
+      "title": "Title for id 1",
+      "text": "Text for id 1",
+      "alt": "our portfolio, preview",
+      "description": "This is the description of project No.1",
+      "links": [
+        { "link": "#", "linkDeskription": "Website" },
+        { "link": "#", "linkDeskription": "Behnce" },
+        { "link": "#", "linkDeskription": "Other" }
+      ],
+      "category": ["Design", "Development", "Marketing and Promotion"],
+      "autors": []
+    },
+    {
+      "cardDescription": "2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo, rerum!",
+      "title": "Title for id 2",
+      "text": "Text for id 2",
+      "alt": "our portfolio, preview",
+      "description": "This is the description of project No.2",
+      "links": [
+        { "link": "#", "linkDeskription": "Website" },
+        { "link": "#", "linkDeskription": "Behance" }
+      ],
+      "category": ["Developmen", "Testing and Optimisation"],
+      "autors": []
+    },
+    {
+      "cardDescription": "3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo, rerum!",
+      "title": "Title for id 3",
+      "text": "Text for id 3",
+      "alt": "our portfolio, preview",
+      "description": "This is the description of project No.3",
+      "links": [
+        { "link": "#", "linkDeskription": "Website" },
+        { "link": "#", "linkDeskription": "Behance" }
+      ],
+      "category": ["Launching the Project", "Marketing and Promotion"],
+      "autors": []
+    },
+    {
+      "cardDescription": "4. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo, rerum!",
+      "title": "Title for id 4",
+      "text": "Text for id 4",
+      "alt": "our portfolio, preview",
+      "description": "This is the description of project No.4",
+      "links": [
+        { "link": "#", "linkDeskription": "Website" },
+        { "link": "#", "linkDeskription": "Behance" }
+      ],
+      "category": ["Research and Design", "Marketing and Promotion"],
+      "autors": []
+    },
+    {
+      "cardDescription": "5. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo, rerum!",
+      "title": "Title for id 5",
+      "text": "Text for id 5",
+      "alt": "our portfolio, preview",
+      "description": "This is the description of project No.5",
+      "links": [
+        { "link": "#", "linkDeskription": "Website" },
+        { "link": "#", "linkDeskription": "Behance" }
+      ],
+      "category": ["Research and Design", "Development", "Marketing and Promotion"],
+      "autors": []
+    },
+    {
+      "cardDescription": "6. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo, rerum!",
+      "title": "Title for id 6",
+      "text": "Text for id 6",
+      "alt": "our portfolio, preview",
+      "description": "This is the description of project No.6",
+      "links": [
+        { "link": "#", "linkDeskription": "Website" },
+        { "link": "#", "linkDeskription": "Behance" }
+      ],
+      "category": ["Design", "Development", "Marketing and Promotion"],
+      "autors": []
+    },
+    {
+      "cardDescription": "7. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo, rerum!",
+      "title": "Title for id 7",
+      "text": "Text for id 7",
+      "alt": "our portfolio, preview",
+      "description": "This is the description of project No.7",
+      "links": [
+        { "link": "#", "linkDeskription": "Website" },
+        { "link": "#", "linkDeskription": "Behance" }
+      ],
+      "category": ["Research and Design", "Marketing and Promotion"],
+      "autors": []
+    },
+    {
+      "cardDescription": "8. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo, rerum!",
+      "title": "Title for id 8",
+      "text": "Text for id 8",
+      "alt": "our portfolio, preview",
+      "description": "This is the description of project No.8",
+      "links": [
+        { "link": "#", "linkDeskription": "Website" },
+        { "link": "#", "linkDeskription": "Behance" }
+      ],
+      "category": ["Developmen", "Testing and Optimisation"],
+      "autors": []
+    }
+  ]
 }

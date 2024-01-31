@@ -25,17 +25,25 @@ const styles = [
 const TestimonialsFonPhoto = () => {
   return (
     <ul className="hidden xl:inline">
-      {items.map((el) => (
-        <li key={el.id} className={`${styles[el.id]} absolute`}>
-          <MouseParallax>
-            <img
-              src={el.photo}
-              alt="testimonials"
-              className={`${styles[el.id]} rounded-full object-cover shadow-testimonials`}
-            />
-          </MouseParallax>
-        </li>
-      ))}
+      {items.map((el, index) => {
+        const factors = {
+          xFactor: 0.1 + index * 0.05, // Приклад динамічної логіки для xFactor
+          yFactor: 0.1 + index * 0.05, // Приклад динамічної логіки для yFactor
+          zFactor: 0.1 + index * 0.05, // Приклад динамічної логіки для zFactor
+        };
+
+        return (
+          <li key={el.id} className={`${styles[el.id]} absolute`}>
+            <MouseParallax {...factors}>
+              <img
+                src={el.photo}
+                alt="testimonials"
+                className={`${styles[el.id]} rounded-full object-cover shadow-testimonials`}
+              />
+            </MouseParallax>
+          </li>
+        );
+      })}
     </ul>
   );
 };

@@ -2,10 +2,6 @@
   {
     "id": "1",
     "image": "/img/portfolio/portfolio_1.jpg",
-    "alt": "our portfolio, preview",
-    "text": "Text for id 1",
-    "title": "Title for id 1",
-    "description": "This is the description of project No.1",
     "startDate": "2022, 11, 01",
     "endDate": "2022, 12, 15",
     "links": [
@@ -18,10 +14,6 @@
   {
     "id": "2",
     "image": "/img/portfolio/portfolio_2.jpg",
-    "alt": "our portfolio, preview",
-    "text": "Text for id 2",
-    "title": "Title for id 2",
-    "description": "This is the description of project No.2",
     "startDate": "2022, 11, 07",
     "endDate": "2023, 10, 01",
     "links": [
@@ -34,10 +26,6 @@
   {
     "id": "3",
     "image": "/img/portfolio/portfolio_3.jpg",
-    "alt": "our portfolio, preview",
-    "text": "Text for id 3",
-    "title": "Title for id 3",
-    "description": "This is the description of project No.3",
     "startDate": "2023, 02, 02",
     "endDate": "2023, 04, 15",
     "links": [
@@ -50,10 +38,6 @@
   {
     "id": "4",
     "image": "/img/portfolio/portfolio_4.jpg",
-    "alt": "our portfolio, preview",
-    "text": "Text for id 4",
-    "title": "Title for id 4",
-    "description": "This is the description of project No.4",
     "startDate": "2023, 02, 07",
     "endDate": "2023, 05, 18",
     "links": [
@@ -66,10 +50,6 @@
   {
     "id": "5",
     "image": "/img/portfolio/portfolio_5.jpg",
-    "alt": "our portfolio, preview",
-    "text": "Text for id 5",
-    "title": "Title for id 5",
-    "description": "This is the description of project No.5",
     "startDate": "2023, 05, 10",
     "endDate": "2023, 07, 20",
     "links": [
@@ -82,10 +62,6 @@
   {
     "id": "6",
     "image": "/img/portfolio/portfolio_6.jpg",
-    "alt": "our portfolio, preview",
-    "text": "Text for id 6",
-    "title": "Title for id 6",
-    "description": "This is the description of project No.6",
     "startDate": "2023, 05, 05",
     "endDate": "2023, 09, 07",
     "links": [
@@ -98,10 +74,6 @@
   {
     "id": "7",
     "image": "/img/portfolio/portfolio_7.jpg",
-    "alt": "our portfolio, preview",
-    "text": "Text for id 7",
-    "title": "Title for id 7",
-    "description": "This is the description of project No.7",
     "startDate": "2023, 08, 18",
     "endDate": "2023, 10, 10",
     "links": [
@@ -114,10 +86,6 @@
   {
     "id": "8",
     "image": "/img/portfolio/portfolio_8.jpg",
-    "alt": "our portfolio, preview",
-    "text": "Text for id 8",
-    "title": "Title for id 8",
-    "description": "This is the description of project No.8",
     "startDate": "2023, 10, 15",
     "endDate": "2023, 11, 30",
     "links": [

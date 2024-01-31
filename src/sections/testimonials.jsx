@@ -15,7 +15,7 @@ const Testimonials = () => {
 
         <TestimonialsSwiper />
 
-        {/* <TestimonialsFonPhoto /> */}
+        <TestimonialsFonPhoto />
       </div>
     </section>
   );

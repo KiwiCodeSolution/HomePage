@@ -39,7 +39,7 @@ export default class PortfolioCardsSwiper extends Component {
       isModalOpen: false,
     };
 
-    this.sliderRef = React.createRef(); // Створіть посилання на компонент слайдера
+    this.sliderRef = React.createRef();
   }
 
   setModalState = (state) => {

@@ -332,3 +332,24 @@ ol {
 .portfolio-link:hover svg path {
   stroke: #227d94;
 }
+
+/* Стилізація скроллбару */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбару */
+}
+
+/* Шлях скроллбару */
+::-webkit-scrollbar-track {
+  background: -webkit-linear-gradient(90deg, rgba(56, 239, 125, 1), rgba(34, 125, 148, 1)); /* Колір фону */
+}
+
+/* Візуальна частина скроллбару (блок, який ви можете перетягувати) */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255, 0.6);
+  border-radius: 8px; /* Колір скроллбару */
+}
+
+/* Зміна вигляду скроллбару при наведенні */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; /* Колір скроллбару при наведенні */
+}

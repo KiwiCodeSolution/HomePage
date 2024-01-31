@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-// import { useTranslation } from "react-i18next";
+
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "./UI/buttons";
@@ -9,7 +10,7 @@ import Overlay from "./UI/modal/overlay";
 import PortfolioDetailInfoCard from "./UI/modal/portfolioDetailInfoCard";
 
 const PortfolioCard = ({ element, onOpenModal, onCloseModal }) => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [activeId, setAxpandedId] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [blockScroll, allowScroll] = useScrollBlock();
@@ -57,11 +58,7 @@ const PortfolioCard = ({ element, onOpenModal, onCloseModal }) => {
           variants={textAnimation}
           animate={element.id === activeId ? "visible" : "hidden"}
         >
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, excepturi voluptas porro sapiente eius
-            vitae iste veniam voluptatum earum, laborum expedita? Ea modi, eveniet voluptas officiis in sequi. Quo,
-            rerum!
-          </p>
+          <p>{t(`portfolio.${element.id - 1}.cardDescription`)}</p>
         </motion.div>
         <Button
           btnStyle="roundBtn"
