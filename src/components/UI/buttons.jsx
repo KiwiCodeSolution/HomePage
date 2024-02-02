@@ -6,7 +6,7 @@ const buttonsStyle = {
     "w-full md:w-60 h-14 text-xl md:text-lg xl:text-xl font-bold leading-[1.6] bg-gradient-to-b from-bg-green to-bg-blue py-3 text-white disabled:opacity-[.5] disabled:cursor-not-allowed disabled:shadow-none transition-all ease-linear animate-ripple hover:animate-none hover:shadow-contactBtn",
   roundBtn:
     "w-[52px] h-[52px] p-4 bg-white hover:shadow-swiper z-[1] text-xl md:text-lg xl:text-xl font-bold leading-[1.6] bg-gradient-to-b from-bg-green to-bg-blue py-3 text-white",
-  closeBtn: "absolute top-6 right-3 cursor-pointer hover:shadow-menuIcon rounded-full p-2",
+  closeBtn: "absolute top-4 right-2 cursor-pointer hover:shadow-menuIcon rounded-full p-2",
   num: "w-[52px] h-[52px] p-4",
 };
 

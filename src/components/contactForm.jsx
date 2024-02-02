@@ -1,19 +1,19 @@
 import PropTypes from "prop-types";
-// import env from "react-dotenv";
+import { useForm, Controller } from "react-hook-form";
 import { useState } from "react";
 
 import Button from "./UI/buttons";
 import Input from "./UI/input";
 import { useTranslation } from "react-i18next";
 import Notification from "./notification";
+import useScrollBlock from "../hooks/useScrollBlock";
+import Loader from "./UI/loader";
 
 const ContactForm = ({ section, formFn }) => {
   const { t } = useTranslation();
-  const handleClick = () => (formFn ? formFn() : null);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState(false);
+  const { control, handleSubmit, reset } = useForm();
+  const [blockScroll, allowScroll] = useScrollBlock();
+  const [isLoading, setIsLoading] = useState(false);
   const [showNotificationSucess, setShowNotificationSucess] = useState(false);
   const [showNotificationError, setShowNotificationError] = useState(false);
 
@@ -28,78 +28,104 @@ const ContactForm = ({ section, formFn }) => {
 
   const btnFormStyle = section !== "modal" ? "absolute top-[215px] left-0 md:static" : "";
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (section === "modal" && (name === "" || email === "")) {
-      setError(true);
-      return;
-    }
-    if (section === "consultation" && (phone === "" || email === "")) {
-      setError(true);
-      return;
-    }
+  const closeSuccesNotiication = () => {
+    reset();
+    setShowNotificationSucess(false);
 
+    if (section === "modal") {
+      formFn();
+    }
+  };
+
+  const showNotification = (type) => {
+    if (type === "success") {
+      setShowNotificationSucess(true);
+    }
+    if (type === "error") {
+      setShowNotificationError(true);
+    }
+  };
+
+  const hideNotification = (type) => {
+    if (type === "success") {
+      closeSuccesNotiication();
+    }
+    if (type === "error") {
+      setShowNotificationError(false);
+    }
+  };
+
+  const informing = (type) => {
+    setIsLoading(false);
+    blockScroll();
+    showNotification(type);
+    setTimeout(() => {
+      allowScroll();
+      hideNotification(type);
+    }, 3000);
+  };
+
+  const onSubmit = (data) => {
+    setIsLoading(true);
     const message =
       section === "modal"
-        ? `<b>New contact from Landing!</b> %0A<b>Phone:</b> ${name} %0A<b>Email:</b> ${email}`
-        : `<b>New contact from Landing!</b> %0A<b>Phone:</b> ${phone} %0A<b>Email:</b> ${email}`;
+        ? `<b>New contact from Landing!</b> %0A<b>Name:</b> ${data.name} %0A<b>Email:</b> ${data.email}`
+        : `<b>New contact from Landing!</b> %0A<b>Phone:</b> ${data.phone} %0A<b>Email:</b> ${data.email}`;
 
     fetch(`${API}?chat_id=${CHAT_ID}&text=${message}&parse_mode=html`)
       .then((res) => {
-        setShowNotificationSucess(true);
-        setTimeout(() => {
-          resetForm();
-          handleClick();
-          setShowNotificationSucess(false);
-        }, 3000);
+        informing("success");
       })
       .catch((error) => {
-        setShowNotificationError(true);
-
-        setTimeout(() => {
-          setShowNotificationError(false);
-        }, 3000);
+        informing("error");
       });
   };
 
-  function resetForm() {
-    setName("");
-    setPhone("");
-    setEmail("");
-    setError(false);
-  }
-
   return (
     <>
-      <form className={`${formStyle}`} onSubmit={handleSubmit} id="form">
+      <form className={`${formStyle}`} onSubmit={handleSubmit(onSubmit)} id="form">
         {section === "modal" ? (
-          <Input
-            type={"text"}
+          <Controller
             name={t(`input.name`)}
-            placeholder={t(`input.placeholder_name`)}
-            changeFn={setName}
-            value={name}
-            error={error}
+            control={control}
+            render={({ field }) => (
+              <Input
+                {...field}
+                control={control}
+                type={"text"}
+                name={t(`input.name`)}
+                placeholder={t(`input.placeholder_name`)}
+              />
+            )}
           />
         ) : (
-          <Input
-            type={"text"}
+          <Controller
             name={t(`input.phone`)}
-            placeholder={t(`input.placeholder_phone`)}
-            changeFn={setPhone}
-            value={phone}
-            error={error}
+            control={control}
+            render={({ field }) => (
+              <Input
+                {...field}
+                control={control}
+                type={"text"}
+                name={t(`input.phone`)}
+                placeholder={t(`input.placeholder_phone`)}
+              />
+            )}
           />
         )}
-        <Input
-          type={"email"}
+        <Controller
           name={t(`input.email`)}
-          placeholder={t(`input.placeholder_email`)}
-          changeFn={setEmail}
-          value={email}
-          error={error}
+          control={control}
+          render={({ field }) => (
+            <Input
+              {...field}
+              control={control}
+              type={"email"}
+              name={t(`input.email`)}
+              placeholder={t(`input.placeholder_email`)}
+            />
+          )}
         />
-
         <div className="md:col-span-2 xl:col-span-1 mx-auto">
           {section === "modal" ? (
             <Button type="button" btnStyle="contactBtn" btnClass="mt-4" aria={"Contact us"}>
@@ -112,20 +138,14 @@ const ContactForm = ({ section, formFn }) => {
           )}
         </div>
       </form>
+
       {showNotificationSucess && (
-        <Notification
-          type={"success"}
-          text="Contacts sent! We will contact you shortly!"
-          clickFn={() => setShowNotificationSucess(!showNotificationSucess)}
-        />
+        <Notification type={"success"} text={t(`notification.success`)} clickFn={closeSuccesNotiication} />
       )}
       {showNotificationError && (
-        <Notification
-          type={"error"}
-          text="Oops, something happened! Please try again!"
-          clickFn={() => setShowNotificationError(!showNotificationError)}
-        />
+        <Notification type={"error"} text={t(`notification.error`)} clickFn={() => setShowNotificationError(false)} />
       )}
+      {isLoading && <Loader />}
     </>
   );
 };

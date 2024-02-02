@@ -1,51 +1,60 @@
-import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
+import React, { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
+import { useController } from "react-hook-form";
+import PropTypes from "prop-types";
+import i18next from "i18next";
 
-const Input = ({ type, name, placeholder, value, changeFn, error }) => {
+const baseStyleInput =
+  "w-full md:w-[280px] h-11 py-2 px-4 rounded-[8px] border-bg-green focus:outline outline-bg-green border-[1px] border-opacity-[.4] hover:border-opacity-[.8] bg-bg-grey placeholder:text-txt-white placeholder:opacity-[.2]";
+
+const Input = forwardRef(({ control, name, placeholder, type, style }, ref) => {
+  const currentLanguage = i18next.language;
   const { t } = useTranslation();
-  const [isShowError, setIsShowError] = useState(error);
+  const { field, fieldState } = useController({
+    name,
+    control,
+    defaultValue: "",
+    rules: { required: t(`input.error`) },
+  });
 
-  useEffect(() => {
-    setIsShowError(error);
-  }, [error]);
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 
-  const handleChange = (e) => {
-    changeFn(e.target.value.toLowerCase());
-    if (e.target.value !== "") {
-      setIsShowError(false);
-    }
-  };
+  const inputName = capitalizeFirstLetter(name);
 
   return (
-    <>
-      <label htmlFor={name} className="w-full flex flex-col text-base text-white opacity-[.6] relative">
-        {name}
+    <div className="relative h-full">
+      <label htmlFor={name} className="w-full flex flex-col text-base text-white opacity-[.6]">
+        {currentLanguage === "ua" && name === "name"
+          ? "Ім'я"
+          : currentLanguage === "ua" && name === "phone"
+          ? "Телефон"
+          : inputName}
         <input
+          ref={ref}
           type={type}
           name={name}
-          value={value}
+          {...field}
           placeholder={placeholder}
           autoComplete="off"
-          onChange={handleChange}
-          className="w-full md:w-[280px] h-11 py-2 px-4 rounded-[8px] border-[1px] border-bg-green border-opacity-[.4] bg-bg-grey placeholder:text-txt-white placeholder:opacity-[.2] focus:outline outline-bg-green"
+          className={`${baseStyleInput} ${fieldState.error ? "border-bg-red focus:outline outline-bg-red" : ""} `}
         />
-        {isShowError && (
-          <p className="absolute top-[68px] text-base text-red-500 italic">
-            {name} {t(`input.error`)}
-          </p>
-        )}
       </label>
-    </>
+
+      {fieldState.error && (
+        <span className="absolute -bottom-7 righi-0 text-red-600 italic">{fieldState.error.message}</span>
+      )}
+    </div>
   );
-};
+});
 
 Input.propTypes = {
-  type: PropTypes.string.isRequired,
+  control: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
-  changeFn: PropTypes.func,
-  error: PropTypes.bool,
+  type: PropTypes.string.isRequired,
+  style: PropTypes.string,
 };
 
 export default Input;

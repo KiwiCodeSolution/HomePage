@@ -104,12 +104,12 @@
     { "title": "Determine the scope", "text": "Determine the scope, boundaries of the project and expectations" }
   ],
   "input": {
-    "error": "is required",
-    "name": "Name",
+    "error": "This field is required",
+    "name": "name",
     "placeholder_name": "Your name",
-    "phone": "Phone",
+    "phone": "phone",
     "placeholder_phone": "Your phone",
-    "email": "Email",
+    "email": "email",
     "placeholder_email": "Your email"
   },
   "adress": ["Adress", "3891 Ranchview Dr. Richardson, California 62639"],
@@ -248,5 +248,11 @@
       "category": ["Developmen", "Testing and Optimisation"],
       "autors": []
     }
-  ]
+  ],
+  "notification": {
+    "error": "Oops, something happened! Please try again!",
+    "success": "Contacts sent! We will contact you shortly!",
+    "info": "This is an informational message",
+    "alert": "This is an alert! Pay attention to something"
+  }
 }

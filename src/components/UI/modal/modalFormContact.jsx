@@ -7,7 +7,6 @@ import { useTranslation } from "react-i18next";
 const ModalFormContact = ({ modalClass, clickFn }) => {
   const { t } = useTranslation();
   return (
-    // <div className="flex justify-between absolute top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 z-50 rounded-[16px]">
     <div className="w-[300px] h-[615px] md:w-[650px] xl:w-[800px] xl:h-[540px] bg-modal bg-no-repeat bg-left bg-bg-main rounded-[16px] shadow-modal">
       <div className="w-full h-full md:bg-modalGirl bg-no-repeat bg-left-bottom">
         <Button type="button" btnStyle="closeBtn" clickFn={clickFn} aria={"close button"}>
@@ -19,7 +18,6 @@ const ModalFormContact = ({ modalClass, clickFn }) => {
           <ContactForm section="modal" formFn={clickFn} />
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };
