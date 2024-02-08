@@ -13,10 +13,10 @@ const Portfolio = () => {
         className="h-[1094px] container mx-auto px-5 md:px-10 xl:px-[120px] pt-8 pb-4 xl:pb-14 relative portfolio"
         id="portfolio"
       >
-        <MTitle variants={titleAnimation} initial="hidden" whileInView="visible">
+        <MTitle variants={titleAnimation} initial="hidden" whileInView="visible" titleClass>
           {t(`title.portfolio`)}
         </MTitle>
-        <SubTitle subTitleClass={"max-w-[452px] mb-6 xl:mb-1"}>{t(`subtitle.portfolio`)}</SubTitle>
+        <SubTitle subTitleClass={"max-w-[452px] mb-[70px] xl:mb-1"}>{t(`subtitle.portfolio`)}</SubTitle>
 
         <PortfolioCardsSwiper />
 

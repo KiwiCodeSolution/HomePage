@@ -40,7 +40,7 @@ function SampleNextArrow(props) {
   const { style, onClick } = props;
   return (
     <div
-      className={`top-0 -left-[78px] ${basicStylesSwiperButton}`}
+      className={`top-5 left-[5px] md:top-[-54px] md:left-0 xl:top-0 xl:left-[-78px] ${basicStylesSwiperButton}`}
       style={{ ...style, display: "flex", alignItems: "center" }}
       onClick={onClick}
     >
@@ -53,7 +53,7 @@ function SamplePrevArrow(props) {
   const { style, onClick } = props;
   return (
     <div
-      className={`top-0 left-[380px] ${basicStylesSwiperButton}`}
+      className={`top-5 right-[5px] md:top-[-54px] md:right-0 md:left-[380px] xl:top-0 ${basicStylesSwiperButton}`}
       style={{ ...style, display: "flex", alignItems: "center" }}
       onClick={onClick}
     >
@@ -92,13 +92,13 @@ export default class SliderHowWeWorks extends Component {
           slidesToShow={5}
           swipeToSlide={true}
           focusOnSelect={true}
-          autoplay={true}
+          // autoplay={true}
           infinite={true}
-          className="w-[356px] ml-[76px]"
+          className="w-[280px] xl:w-[356px] md:ml-[76px]"
         >
           {ITEMS.map((el) => (
             <div key={el.id + 10}>
-              <div className="w-[54px] h-[54px] mx-auto slick-item cursor-pointer">
+              <div className="w-[36px] h-[36px] md:w-[54px] md:h-[54px] mx-auto slick-item cursor-pointer">
                 <p className="numbers__title">{el.id}</p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default class SliderHowWeWorks extends Component {
           asNavFor={this.state.nav2}
           ref={(slider) => (this.slider1 = slider)}
           {...settings}
-          className="w-[100% - 76px] ml-[76px] mt-[-55px]"
+          className="w-[280px] md:w-full xl:ml-[76px] xl:mt-[-55px] min-h-[350px]"
         >
           {ITEMS.map((el) => (
             <HowWeWorksItem item={el} key={el.id} />

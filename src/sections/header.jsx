@@ -6,11 +6,9 @@ import useMatchMedia from "../hooks/useMediaQuery";
 const Header = () => {
   const { isMobile } = useMatchMedia();
   return (
-    <>
-      <div className="container mx-auto">
-        <header className="w-full z-30">{isMobile ? <NavMobile /> : <NavDesktop />}</header>
-      </div>
-    </>
+    <div className="container mx-auto">
+      <header className="w-full z-30">{isMobile ? <NavMobile /> : <NavDesktop />}</header>
+    </div>
   );
 };
 

@@ -22,7 +22,7 @@ function SamplePrevArrow(props) {
   const { style, onClick } = props;
   return (
     <div
-      className={`-top-[58px] right-[173px] ${basicStylesSwiperButton}`}
+      className={`-top-[58px] left-[5px] xl:left-0 xl:right-[173px] ${basicStylesSwiperButton}`}
       style={{ ...style, display: "flex", alignItems: "center" }}
       onClick={onClick}
     >
@@ -51,12 +51,31 @@ export default class PortfolioCardsSwiper extends Component {
       className: "center",
       dots: true,
       infinite: true,
-      slidesToShow: 3,
       speed: 500,
       rows: 2,
       autoplay: true,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     };
 
     return (

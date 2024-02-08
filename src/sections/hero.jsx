@@ -43,12 +43,14 @@ const Hero = () => {
             initial="hidden"
             whileInView="visible"
             variants={textAnimation}
-            className="w-[311px] xl:w-[750px] text-[34px] xl:text-[64px] font-bold leading-[1.4] mb-14 xl:mb-8"
+            className="w-[280px] xl:w-[750px] text-[34px] xl:text-[64px] font-bold leading-[1.4] mb-14 xl:mb-8"
           >
             {t(`hero.0`)} <span className="accent">{t(`hero.1`)}</span> {t(`hero.2`)}
             <span className="accent"> {t(`hero.3`)}</span> {t(`hero.4`)}
           </motion.h1>
-          <p className="text-base xl:text-2xl leading-[1.6] w-[301px] xl:w-[600px] mb-3 xl:mb-10 z-10">{t(`hero.5`)}</p>
+          <p className="text-base xl:text-2xl leading-[1.6] max-w-[280px] xl:w-[600px] mb-3 xl:mb-10 z-10">
+            {t(`hero.5`)}
+          </p>
 
           <Button btnStyle="startedBtn" clickFn={openModal} aria={"open pop-up button"}>
             {t(`buttons.0`)}

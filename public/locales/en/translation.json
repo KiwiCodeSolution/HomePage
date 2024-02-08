@@ -118,27 +118,32 @@
     {
       "name": "Mohammad Faruque",
       "company": "company 1",
-      "text": "1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+      "text": "Extremely satisfied with our collaboration with the IT startup! Their software development solutions impress with their quality and efficiency. They also handle marketing and UI/UX design tasks exceptionally professionally."
     },
     {
       "name": "Jonathan Borba",
       "company": "company 2",
-      "text": "2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+      "text": "The team has proven highly competent in business forecasting. We confidently recommend them as reliable partners for desktop application development and business consultancy."
     },
     {
       "name": "Joseph Gonzalez",
       "company": "company 3",
-      "text": "3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+      "text": "In a short time of cooperation, we've seen significant progress in our projects thanks to the professionalism of the IT startup. They know how to deliver results and perform at a high level."
     },
     {
       "name": "Mubariz Mehdizadeh",
       "company": "company 4",
-      "text": "4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+      "text": "Our team is impressed by the efficiency of the IT startup's work. They not only develop excellent software but also provide valuable insights into marketing and business strategies."
     },
     {
       "name": "Joshua Rondeau",
       "company": "company 5",
-      "text": "5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est asperiores, eveniet nesciunt id suscipit placeat! Dolore hic libero, expedita voluptatum quibusdam maxime, ab minima voluptas fuga consequatur nostrum soluta."
+      "text": "Big thanks for the assistance in developing our products! The IT startup has proven to be an excellent partner in all aspects, from programming to design and sales strategies."
+    },
+    {
+      "name": "Maria Mendes",
+      "company": "company 6",
+      "text": "A professional approach to work and excellent communication make the IT startup the best choice for our company. We are very satisfied with the results of our collaboration!."
     }
   ],
   "footer": ["Services", "Contacts"],

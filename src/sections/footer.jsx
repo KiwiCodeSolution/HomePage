@@ -3,7 +3,7 @@ import Logo from "../components/UI/logo";
 import ContactList from "../components/contactList";
 import ServiсesList from "../components/services";
 import { useTranslation } from "react-i18next";
-import SocialIconsList from "../components/socialIconsList";
+// import SocialIconsList from "../components/socialIconsList";
 import { scrollTo } from "../helpers/scrollFunctions";
 
 import { Up } from "../icons/iconComponent";

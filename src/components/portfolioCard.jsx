@@ -43,7 +43,7 @@ const PortfolioCard = ({ element, onOpenModal, onCloseModal }) => {
   return (
     <div className="py-5">
       <motion.div
-        className="w-[416px] h-[368px] mx-auto rounded-3xl opacity-80 relative hover:opacity-100"
+        className="max-w-[280px] md:w-[416px] h-[368px] mx-auto rounded-3xl opacity-80 relative hover:opacity-100"
         onMouseEnter={() => setAxpandedId(element.id)}
         onMouseLeave={() => setAxpandedId(null)}
       >

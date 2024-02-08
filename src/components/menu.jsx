@@ -14,7 +14,7 @@ const NAV_ELEMENTS = [
 const Menu = ({ type, styles, clickFn }) => {
   const { t } = useTranslation();
   return (
-    <nav className="flex relative gap-x-14 md:gap-x-3 xl:gap-x-36">
+    <nav className="flex relative gap-x-14 md:gap-x-3 xl:gap-x-36 md:ml-2 xl:lm-0">
       <ul
         className={`flex ${
           type === "header"
@@ -25,8 +25,8 @@ const Menu = ({ type, styles, clickFn }) => {
         }`}
       >
         {NAV_ELEMENTS.map((el) => (
-          <li key={el.id}>
-            <a href={el.linkId} className={`cursor-pointer ${textEffect} text-white`} onClick={clickFn}>
+          <li key={el.id} className="w-full">
+            <a href={el.linkId} className={`cursor-pointer ${textEffect} text-white mx-auto`} onClick={clickFn}>
               {t(`nav.${el.id - 1}`)}
             </a>
           </li>

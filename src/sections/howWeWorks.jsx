@@ -8,7 +8,7 @@ const HowWeWorks = () => {
 
   return (
     <section className="bg-bg-main z-10 how">
-      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] relative pb-7 xl:pb-[60px]">
+      <div className="container mx-auto px-5 md:px-10 xl:px-[120px] relative pb-7 xl:pb-[60px] h-[900px] md:h-full">
         <MTitle variants={titleAnimation} initial="hidden" whileInView="visible" titleClass={"mb-8"}>
           {t(`title.how`)}
         </MTitle>

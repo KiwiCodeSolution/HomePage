@@ -13,7 +13,7 @@ const ResponseCard = ({ element }) => {
         />
       </li>
       <li className="text-xl font-bold text-center mb-1">{t(`response.${element.id - 1}.name`)}</li>
-      <li className="text-base font-bold text-center mb-6">{t(`response.${element.id - 1}.company`)}</li>
+      <li className="text-base font-bold text-center mb-4">{t(`response.${element.id - 1}.company`)}</li>
       <li className="text-base opacity-50 text-center mb-1">{t(`response.${element.id - 1}.text`)}</li>
     </ul>
   );

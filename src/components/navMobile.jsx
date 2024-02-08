@@ -25,36 +25,34 @@ const NavMobile = () => {
   }
 
   return (
-    <div className="container mx-auto">
-      <div className="w-full h-full fixed top-1">
-        {isOpen ? (
-          <Overlay>
-            <div className="bg-bg-main flex flex-col justify-between h-full pt-[120px] px-[70px] pb-10">
-              <Button type="button" btnStyle="closeBtn" clickFn={closeModal} aria={"close button"}>
-                <icons.Close />
-              </Button>
-              <Menu type={"mobile"} clickFn={closeModal} />
-              <Logo />
-              <SocialIconsList type="mobile" />
-            </div>
-          </Overlay>
-        ) : (
-          <div className="flex justify-between items-center p-4">
-            <img src={logo} alt="Logo" className="w-[120px] h-[69px]" />
-            <div className="flex justify-between gap-x-5">
-              <LanguageBtns />
-              <button
-                type="button"
-                onClick={openModal}
-                className="cursor-pointer hover:shadow-menuIcon focus:shadow-menuIcon rounded-full p-2"
-                aria-label="menu button"
-              >
-                <icons.Menu />
-              </button>
-            </div>
+    <div className="w-[320px] h-full fixed top-2">
+      {isOpen ? (
+        <Overlay>
+          <div className="bg-bg-main flex flex-col justify-between h-full pt-[120px] px-[70px] pb-10">
+            <Button type="button" btnStyle="closeBtn" clickFn={closeModal} aria={"close button"}>
+              <icons.Close />
+            </Button>
+            <Menu type={"mobile"} clickFn={closeModal} />
+            <Logo />
+            <SocialIconsList type="mobile" />
           </div>
-        )}
-      </div>
+        </Overlay>
+      ) : (
+        <div className="flex justify-between items-center p-4">
+          <img src={logo} alt="Logo" className="w-[120px] h-[69px]" />
+          <div className="flex justify-between gap-x-5">
+            <LanguageBtns />
+            <button
+              type="button"
+              onClick={openModal}
+              className="cursor-pointer hover:shadow-menuIcon focus:shadow-menuIcon rounded-full p-2"
+              aria-label="menu button"
+            >
+              <icons.Menu />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
